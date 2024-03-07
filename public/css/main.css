@@ -9,24 +9,23 @@ body {
 }
 
 .btn-brown-gold {
-  background-color: rgb(181, 145, 79);
+  background-color: #b5914f;
   color: #fff;
-  border: 1px solid rgb(181, 145, 79);
+  border: 1px solid #b5914f;
 }
 
 .btn-brown-gold:hover {
   background-color: #fff;
-  color: rgb(181, 145, 79);
-  border: 1px solid rgb(181, 145, 79);
+  color: #b5914f;
+  border: 1px solid #b5914f;
 }
 
 .bg-wacc-gradient {
-  background-image: linear-gradient(90deg, #d6e7ee 49%, rgba(214, 231, 238, 0.4) 100%);
+  background-color: #121820;
 }
 
 .bg-wacc-gradient.left-top {
-  background-image: linear-gradient(180deg, #d6e7ee -85%, rgba(214, 231, 238, 0.4) 100%);
-  background-position: left top;
+  background-color: #121820;
 }
 
 .bg-wacc-image {
@@ -39,6 +38,10 @@ body {
   background-color: #121820;
 }
 
+.bg-wacc-cadet-gray {
+  background-color: #cbced4;
+}
+
 .bg-wacc-azure-white {
   background-color: #d6e7ee;
 }
@@ -48,7 +51,15 @@ body {
 }
 
 .text-wacc-color {
-  color: rgb(181, 145, 79);
+  color: #b5914f;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-dark {
+  color: #121820 !important;
 }
 
 .spacer .spacer-50 {
@@ -61,7 +72,7 @@ body {
   max-width: 390px;
   margin: 0 auto;
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0;
   line-height: 200%;
   border-color: rgba(0, 0, 0, 0.13);
@@ -78,7 +89,7 @@ body {
   color: #fff !important;
 }
 .wacc-btn:hover i {
-  color: rgb(181, 145, 79) !important;
+  color: #b5914f !important;
 }
 
 .wacc-btn-sub {
@@ -87,9 +98,10 @@ body {
   margin-top: 1rem;
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 140%;
+  line-height: 1rem;
+  letter-spacing: 0.6px;
   font-size: 0.78rem;
-  color: #60606b;
+  color: #640000;
 }
 
 .container {
@@ -106,17 +118,16 @@ h6 {
 }
 
 h2 {
-  letter-spacing: -0.05rem;
-  line-height: 1.4em;
+  
+  
   font-size: 3rem;
-  color: rgb(29, 46, 59);
+  color: #121820;
 }
 
 h3 {
-  letter-spacing: -0.05rem;
-  line-height: 1.4em;
+  
   font-size: 2.5rem;
-  color: rgb(29, 46, 59);
+  color: #121820;
 }
 
 p,
@@ -129,17 +140,13 @@ ol {
   line-height: 1.4em;
 }
 
-ul,
-ol {
-  font-size: 1rem;
-}
 
 p {
   margin-bottom: 0.6rem;
 }
 
 .subheading {
-  color: #b5914f;
+  color: #640000;
   font-weight: bold;
   font-family: "Libre Baskerville", serif;
   text-transform: capitalize;
@@ -159,33 +166,55 @@ p {
 
 .uncheck-icon-list li {
   text-indent: 10px;
+  font-size: 1.125rem;
 }
 .uncheck-icon-list li::marker {
   content: "\f057";
   font-family: "Font Awesome 5 Free";
-  color: #dc3545;
+  color: #640000;
   font-weight: bold;
 }
 
 .check-icon-list li {
   text-indent: 10px;
+  font-size: 1.125rem;
 }
 .check-icon-list li::marker {
   content: "\f058";
   font-family: "Font Awesome 5 Free";
-  color: rgb(181, 145, 79);
+  color: #b5914f;
   font-weight: bold;
 }
 
-header .logo {
+header .navbar-brand {
+  position: relative;
+}
+/* header .navbar-brand::before {
+  content: "beta";
+  position: absolute;
+  top: 2px;
+  right: -50px;
+  background-color: #b5914f;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.2px;
+  color: #fff;
+} */
+header .navbar-brand .logo {
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
 }
 header .nav-link {
-  color: #121820;
+  color: #fff;
 }
-header .nav-link:hover {
-  color: rgb(181, 145, 79);
+header .nav-link.active, header .nav-link.show {
+  color: #b5914f !important;
+}
+header .nav-link:hover, header .nav-link:focus {
+  color: #b5914f;
 }
 header .navbar-toggler {
   border: 0;
@@ -199,6 +228,7 @@ header #hamburger-icon {
   width: 40px;
   height: 40px;
 }
+
 #hero {
   padding-top: 5rem;
 }
@@ -206,7 +236,7 @@ header #hamburger-icon {
   line-height: 110%;
   font-size: 6rem;
   font-weight: 900;
-  color: rgb(29, 46, 59);
+  color: #121820;
   text-align: center;
 }
 #hero p {
@@ -214,7 +244,7 @@ header #hamburger-icon {
   letter-spacing: 0;
   line-height: 140%;
   font-size: 2rem;
-  color: rgb(29, 46, 59);
+  color: #000;
   text-align: center;
   width: 100%;
   max-width: 931px;
@@ -246,9 +276,7 @@ header #hamburger-icon {
 }
 #hero .custom-card {
   border-radius: 8px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 25px;
   box-shadow: 0px 0px 20px 0px rgba(0, 44, 122, 0.08);
   background: #ffffff;
   text-align: center;
@@ -262,15 +290,20 @@ header #hamburger-icon {
   height: 50px;
   width: auto;
 }
+#hero .custom-card p {
+  color: #121820;
+}
 
 #love-using-wacc {
   margin-top: -5rem;
   padding-top: 8rem !important;
 }
 #love-using-wacc .card {
+  background-color: #fff;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   padding-bottom: 1.5rem;
+  text-align: center;
 }
 #love-using-wacc .card img {
   display: block;
@@ -285,6 +318,13 @@ header #hamburger-icon {
   padding-right: 5rem;
 }
 
+#customers-to-you h2,
+#customers-to-you h3,
+#customers-to-you p,
+#customers-to-you ul,
+#customers-to-you ol {
+  color: #121820;
+}
 #customers-to-you .custom-card {
   padding-bottom: 50px;
   padding-top: 50px;
@@ -307,7 +347,7 @@ header #hamburger-icon {
 #customers-to-you .custom-card li::before {
   content: "\f105";
   font-family: "Font Awesome 5 Free";
-  color: rgb(181, 145, 79);
+  color: #b5914f;
   font-weight: bold;
   position: absolute;
   left: -15px;
@@ -366,7 +406,7 @@ header #hamburger-icon {
     left: 0;
     padding: 2rem;
     padding-top: 4rem;
-    background: #fff;
+    background: #121820;
     width: 100%;
     min-height: 100vh;
     z-index: 9;
@@ -375,6 +415,7 @@ header #hamburger-icon {
     position: absolute;
     top: 1rem;
     right: 1rem;
+    color: #d6e7ee;
   }
   header #wacc-mobile-menu .wacc-mobile-menu-body {
     width: 100%;
@@ -438,7 +479,6 @@ header #hamburger-icon {
     line-height: 110%;
     font-size: 2.6rem;
     font-weight: 900;
-    color: rgb(29, 46, 59);
     text-align: center;
   }
   #hero iframe {
@@ -466,7 +506,7 @@ header #hamburger-icon {
     padding-right: calc(var(--bs-gutter-x) * 0.5);
   }
   #customers-to-you .custom-card {
-    padding: 50px 15px;
+    padding: 40px 15px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -519,16 +559,14 @@ header #hamburger-icon {
 @media only screen and (max-width: 500px) {
   h2 {
     font-size: 1.65rem;
-    line-height: 1.4em;
+    
   }
   h3 {
     font-size: 1.5rem;
-    line-height: 1.4em;
-    margin-bottom: 1rem;
   }
   .subheading {
-    font-size: 1rem;
-  }
+    font-size: 1.2rem;
+}
   .wacc-btn {
     max-width: 320px;
     padding-left: 20px;
@@ -550,7 +588,7 @@ header #hamburger-icon {
     margin: 0.5rem 0 1rem;
   }
   #hero p {
-    font-size: 1.05rem;
+    font-size: 1.125rem;
     font-weight: 500;
   }
   #hero iframe {

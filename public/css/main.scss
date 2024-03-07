@@ -1,7 +1,14 @@
 $blue-black: #121820;
-$brown-gold: rgb(181, 145, 79);
+$dark-gray: #1b1b20;
+// $cadet-grey: #9da2ab;
+$cadet-grey: #cbced4;
+$brown-gold: #b5914f;
 $azure-white: #d6e7ee;
+$wacc-red: #640000;
 $pale-cerulean: rgb(151, 202, 219, 0.6);
+
+$text-color: #353535;
+// $text-color: #fff;
 
 body {
   background: #ffffff;
@@ -25,20 +32,11 @@ body {
 }
 
 .bg-wacc-gradient {
-  background-image: linear-gradient(
-    90deg,
-    $azure-white 49%,
-    rgba(214, 231, 238, 0.4) 100%
-  );
+  background-color: $blue-black;
 }
 
 .bg-wacc-gradient.left-top {
-  background-image: linear-gradient(
-    180deg,
-    #d6e7ee -85%,
-    rgba(214, 231, 238, 0.4) 100%
-  );
-  background-position: left top;
+  background-color: $blue-black;
 }
 
 .bg-wacc-image {
@@ -49,6 +47,10 @@ body {
 
 .bg-wacc-blue-black {
   background-color: $blue-black;
+}
+
+.bg-wacc-cadet-gray {
+  background-color: $cadet-grey;
 }
 
 .bg-wacc-azure-white {
@@ -63,6 +65,14 @@ body {
   color: $brown-gold;
 }
 
+.text-white {
+  color: #fff !important;
+}
+
+.text-dark {
+  color: $blue-black !important;
+}
+
 .spacer {
   .spacer-50 {
     height: 50px;
@@ -75,7 +85,7 @@ body {
   max-width: 390px;
   margin: 0 auto;
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0;
   line-height: 200%;
 
@@ -104,11 +114,12 @@ body {
   display: block;
   text-align: center;
   margin-top: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0;
-  line-height: 140%;
+  line-height: 1rem;
+  letter-spacing: 0.6px;
   font-size: 0.78rem;
-  color: #60606b;
+  color: $wacc-red;
 }
 
 .container {
@@ -128,20 +139,20 @@ h2 {
   letter-spacing: -0.05rem;
   line-height: 1.4em;
   font-size: 3rem;
-  color: rgb(29, 46, 59);
+  color: $blue-black;
 }
 
 h3 {
   letter-spacing: -0.05rem;
   line-height: 1.4em;
   font-size: 2.5rem;
-  color: rgb(29, 46, 59);
+  color: $blue-black;
 }
 
 p,
 ul,
 ol {
-  color: #000;
+  color: $text-color;
   font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 0;
@@ -153,26 +164,11 @@ ol {
   font-size: 1rem;
 }
 
-// main {
-//   ul {
-//     li {
-//       text-indent: 4px;
-//       &::marker {
-//         content: "\f105 ";
-//         font-family: "Font Awesome 5 Free";
-//         color: $brown-gold;
-//         font-weight: bold;
-//       }
-//     }
-//   }
-// }
-
 p {
   margin-bottom: 0.6rem;
 }
 
 .subheading {
-  // font-style: italic;
   color: #b5914f;
   font-weight: bold;
   font-family: "Libre Baskerville", serif;
@@ -197,7 +193,7 @@ p {
     &::marker {
       content: "\f057 ";
       font-family: "Font Awesome 5 Free";
-      color: #dc3545;
+      color: #640000;
       font-weight: bold;
     }
   }
@@ -216,13 +212,35 @@ p {
 }
 
 header {
-  .logo {
-    width: 100%;
-    max-width: 200px;
+  .navbar-brand {
+    position: relative;
+    &::before {
+      content: "beta";
+      position: absolute;
+      top: 2px;
+      right: -50px;
+      background-color: $brown-gold;
+      font-size: 10px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 50px;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 0.2px;
+      color: #fff;
+    }
+    .logo {
+      width: 100%;
+      max-width: 200px;
+    }
   }
   .nav-link {
-    color: $blue-black;
-    &:hover {
+    color: $azure-white;
+    &.active,
+    &.show {
+      color: $brown-gold !important;
+    }
+    &:hover,
+    &:focus {
       color: $brown-gold;
     }
   }
@@ -238,10 +256,6 @@ header {
     display: inline-block;
     width: 40px;
     height: 40px;
-    span {
-      &:nth-child(1) {
-      }
-    }
   }
 }
 
@@ -251,7 +265,7 @@ header {
     line-height: 110%;
     font-size: 6rem;
     font-weight: 900;
-    color: rgb(29, 46, 59);
+    color: $blue-black;
     text-align: center;
   }
 
@@ -260,7 +274,7 @@ header {
     letter-spacing: 0;
     line-height: 140%;
     font-size: 2rem;
-    color: rgb(29, 46, 59);
+    color: $text-color;
 
     text-align: center;
     width: 100%;
@@ -313,6 +327,9 @@ header {
       height: 50px;
       width: auto;
     }
+    p {
+      color: $blue-black;
+    }
   }
 }
 
@@ -320,9 +337,11 @@ header {
   margin-top: -5rem;
   padding-top: 8rem !important;
   .card {
+    background-color: #fff;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
     padding-bottom: 1.5rem;
+    text-align: center;
     img {
       display: block;
       margin-inline: auto;
@@ -343,6 +362,13 @@ header {
 }
 
 #customers-to-you {
+  h2,
+  h3,
+  p,
+  ul,
+  ol {
+    color: $blue-black;
+  }
   .custom-card {
     padding-bottom: 50px;
     padding-top: 50px;
@@ -448,6 +474,7 @@ header {
         position: absolute;
         top: 1rem;
         right: 1rem;
+        color: $azure-white;
       }
       .wacc-mobile-menu-body {
         width: 100%;
@@ -458,7 +485,7 @@ header {
       }
       padding: 2rem;
       padding-top: 4rem;
-      background: #fff;
+      background: $blue-black;
       width: 100%;
       min-height: 100vh;
       z-index: 9;
@@ -532,7 +559,6 @@ header {
       line-height: 110%;
       font-size: 2.6rem;
       font-weight: 900;
-      color: rgb(29, 46, 59);
       text-align: center;
     }
 
