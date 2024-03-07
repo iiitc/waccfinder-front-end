@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wacc Finder 2.0</title>
+
+    <link rel="stylesheet" href="../assets/css/mklb.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="./public/css/app.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../public/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="main_header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="/components/get-started.html">
+                  <img src="../public/images/logo.png" alt="WACC Finder" />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#wacc-menu-toggler"
+                  aria-controls="wacc-menu-toggler"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="wacc-menu-toggler">
+                  <ul class="navbar-nav ms-auto mt-4 mt-md-0 mb-2 mb-md-0">
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-brown-gold" href="login.html">
+                        Sign In
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="plan" id="select-plan">
+        <section class="plan__header">
+          <div class="container">
+            <a class="btn__back" href="account.html"
+              ><img
+                src="../public/images/Get-Started/ic-chevrons-left.svg"
+                alt="img"
+            /></a>
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <div class="section__heading text-center">
+                  <h1>Select your plan</h1>
+                </div>
+                <div class="section__subtitle text-center">
+                  <p>
+                    Access our exclusive cost of capital platform with simple,
+                    <br />pay-as-you-go pricing you can cancel anytime.
+                  </p>
+                </div>
+                <form action="#" method="post">
+                  <div class="switch-prices">
+                    <span>Display prices in SGD</span>
+                    <label class="switch">
+                      <input class="switch" type="checkbox" />
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="plan__packets">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <div class="plan__card matchs">
+                  <div class="plan__card-title" style="height: 128px">
+                    <span><p>Free to try for as long as you’d like</p></span>
+                  </div>
+                  <div class="plan__card-body matchr">
+                    <div class="plan__card-heading">
+                      <h2>Free</h2>
+                      <div class="price">$0</div>
+                    </div>
+                    <div class="plan__card-list">
+                      <ul>
+                        <li>Display results in real time</li>
+                        <li>Retrieve stored data quicky</li>
+                        <li>Store up to 2&nbsp;calculations</li>
+                        <li>Classic WACC Formula</li>
+                        <li>Video tutorials</li>
+                        <li>Help &amp; Support FAQ</li>
+                      </ul>
+                    </div>
+                    <div class="plan__card-btn matchb">
+                      <a class="btn btn-brown-gold w-100" href="register.html"
+                        >Get Started</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="plan__card matchs higlight">
+                  <div class="plan__card-title" style="height: 128px">
+                    <p>
+                      Most popular!<br />
+                      WACCFinder<sup>TM</sup>&nbsp;PDF with citations for all
+                      sources used. Unlock exclusive training videos.
+                    </p>
+                  </div>
+                  <div class="plan__card-body matchr">
+                    <div class="plan__card-heading">
+                      <h2>Business</h2>
+                      <div class="price">$200/month</div>
+                    </div>
+                    <div class="plan__card-list">
+                      <ul>
+                        <li>Display results in real time</li>
+                        <li>Retrieve stored data quicky</li>
+                        <li>Store up to 2&nbsp;calculations<sup>2</sup></li>
+                        <li>Extended WACC Formula<sup>3</sup></li>
+                        <li>
+                          Select risk-free<sup>1</sup>&nbsp;countries and
+                          non-risk-free countries
+                        </li>
+                        <li>
+                          Blend multi-currency or multi-country inputs<sup
+                            >4</sup
+                          >
+                        </li>
+                        <li>Retrieve industry beta</li>
+                        <li>Video tutorials</li>
+                        <li>Help &amp; Support FAQ</li>
+                        <li>
+                          Add a Chartered Valuer and Appraiser signed PDF report
+                          at $549
+                          <ul>
+                            <li>WACC with data visualization</li>
+                            <li>
+                              Input assumptions
+                              <ul>
+                                <li>Guideline public companies</li>
+                                <li>Calculates Hamada adjusted beta</li>
+                                <li>Country risk premium</li>
+                                <li>Small cap premium</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          Bonus training videos (free access with paid
+                          subscription)
+                          <ul>
+                            <li>
+                              How valuers calculate WACC<br />
+                              1hr, worth $2,000<br />
+                              <a href="#" class="link">View video trailer</a>
+                            </li>
+                            <li>
+                              How to negotiate WACC<br />
+                              1hr, worth $2,000<br />
+                              <a href="#" class="link">View video trailer</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>Starting from 1 member</li>
+                      </ul>
+                    </div>
+
+                    <div class="plan__card-btn matchb">
+                      <a class="btn btn-brown-gold w-100" href="register.html"
+                        >Get Started</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="plan__card matchs">
+                  <div class="plan__card-title" style="height: 128px">
+                    <p>Buy more, save more.</p>
+                  </div>
+                  <div class="plan__card-body matchr">
+                    <div class="plan__card-heading">
+                      <h2>Enterprise</h2>
+                      <div class="price">
+                        <small>Contact Sales for a price estimate</small>
+                      </div>
+                    </div>
+                    <div class="plan__card-list">
+                      <p>All the greatness of Business, and:</p>
+
+                      <ul>
+                        <li>Personal onboarding concierge</li>
+                        <li>Designated customer success teams</li>
+                        <li>
+                          Centralized account management and insights for
+                          adoption and usage
+                        </li>
+                        <li>
+                          Scale WACCFinder™ across the entire organization
+                          risk-free with our flexible licensing program
+                        </li>
+                        <li>Starting from 10 members</li>
+                      </ul>
+                    </div>
+                    <div class="plan__card-btn matchb">
+                      <a class="btn btn-brown-gold w-100" href="register.html"
+                        >Get Started</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="plan__footnote">
+              <ol>
+                <li>AAA-rated</li>
+                <li>
+                  5 Pack WACC Add-on: Protect 5 more Extended WACC records at
+                  $25/month.
+                </li>
+                <li>Includes (1) country risk and (2) small cap premiums.</li>
+                <li>
+                  A VALLARIS adviser required to estimate non-AAA-rated,
+                  multi-currency or multi-country inputs.
+                  <a class="link" href="#">Click here</a> to book an Advisory
+                  call.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+        <section class="faq-block">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-10">
+                <h3>Frequently Asked Questions</h3>
+                <div class="accordion" id="select-plan-faq">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                      >
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#select-plan-faq"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the first item's accordion body.</strong
+                        >
+                        It is shown by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Accordion Item #2
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#select-plan-faq"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the second item's accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#select-plan-faq"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the third item's accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer footer__secondary" id="login-footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__top">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="footer__copyright text-center text-md-start">
+                  <p>© 2024 All rights reserved. Vallaris Private Limited</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="footer__logo">
+                  <a href="#"
+                    ><img
+                      class="ms-md-auto"
+                      src="../public/images/logo.png"
+                      alt="WACC Finder"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__note">
+            <p>
+              VALLARIS refers to the VALLARIS network and/or one or more of its
+              member firms, each of which is a separate legal entity.
+            </p>
+            <p>
+              Content on this site is solely intended to provide general
+              information and does not provide any advice or create any
+              relationship, whether legally binding or otherwise. Please consult
+              your advisers for specific advice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/mklb.js"></script>
+    <script src="../public/js/main.js"></script>
+  </body>
+</html>
