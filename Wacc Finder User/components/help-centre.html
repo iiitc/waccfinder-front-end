@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wacc Finder 2.0</title>
+
+    <link rel="stylesheet" href="../assets/css/mklb.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="./public/css/app.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../public/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="main_header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="/components/get-started.html">
+                  <img src="../public/images/logo.png" alt="WACC Finder" />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#wacc-menu-toggler"
+                  aria-controls="wacc-menu-toggler"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="wacc-menu-toggler">
+                  <ul class="navbar-nav ms-auto mt-4 mt-md-0 mb-2 mb-md-0">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="notification.html"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Notifications"
+                      >
+                        <img
+                          src="../public/images/Navbar/ic-head-notif.svg"
+                          alt=""
+                        />
+                        <span class="d-md-none text-white">Notifications</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="help-centre.html"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Help Centre"
+                      >
+                        <img
+                          src="../public/images/Navbar/ic-head-mail.svg"
+                          alt=""
+                        />
+                        <span class="d-md-none text-white">Help Centre</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="video-tutorial.html"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Video Tutorials"
+                      >
+                        <img
+                          src="../public/images/Navbar/header-menu-video.svg"
+                          alt=""
+                        />
+                        <span class="d-md-none text-white"
+                          >Video Tutorials</span
+                        >
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="wacc-result.html"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="WACC Finder"
+                      >
+                        <img
+                          src="../public/images/Navbar/ic-head-orders.svg"
+                          alt=""
+                        />
+                        <span class="d-md-none text-white">WACC Finder</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="account.html"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Account"
+                      >
+                        <img
+                          src="../public/images/Navbar/header-menu-account.svg"
+                          alt=""
+                        />
+                        <span class="d-md-none text-white">Account</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="container">
+        <div class="row section">
+          <div class="col-lg-6">
+            <h1>Help Centre</h1>
+            <p>
+              Learn how to use WACCFinderTM, get answers to frequently asked
+              questions.
+            </p>
+            <div class="search-box">
+              <div class="form-group form-search">
+                <form action="#">
+                  <input
+                    class="form-control"
+                    name="search"
+                    type="text"
+                    placeholder="Search here..."
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="helpcenter">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <nav class="side__nav">
+                <a
+                  class="nav-item active"
+                  href="https://waccfinder.com/account/help-centre?category=general"
+                  >General</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=waccfinder"
+                  >WACCFinder</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=membership"
+                  >Membership</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=billings"
+                  >Billings</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=valuation-date"
+                  >Valuation Date</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=duration"
+                  >Duration</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=industry"
+                  >Industry</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=currency"
+                  >Currency</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=country"
+                  >Country</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=cost-of-debt"
+                  >Cost of Debt</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=tax-rate"
+                  >Tax Rate</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=debt-to-capital-ratio"
+                  >Debt to Capital Ratio</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=cost-of-equity"
+                  >Cost of Equity</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=risk-free-rate"
+                  >Risk-free Rate</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=beta"
+                  >Beta</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=equity-risk-premium"
+                  >Equity Risk Premium</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=country-risk-premium"
+                  >Country Risk Premium</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=small-capitalization-premium"
+                  >Small Capitalization Premium</a
+                >
+                <a
+                  class="nav-item"
+                  href="https://waccfinder.com/account/help-centre?category=affiliate"
+                  >Affiliate</a
+                >
+              </nav>
+              <div class="banner__question">
+                <b>Have more questions?</b
+                ><a class="btn btn__primary btn__block" href="#"
+                  >Submit question</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
+              <div class="faq">
+                <div class="faq-accordion" id="accordion">
+                  <div class="panel">
+                    <div class="panel-header" id="headingone">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseone"
+                          aria-expanded="true"
+                          aria-controls="collapseone"
+                        >
+                          What is WACC?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      class="collapse show"
+                      id="collapseone"
+                      aria-labelledby="headingone"
+                      data-parent="#accordion"
+                    >
+                      <div class="panel-body">
+                        <p>
+                          Weighted-Average Cost of Capital (OTC:WACC) is the
+                          average of debt and equity capital costs that all
+                          publicly traded companies with debt and equity
+                          stakeholders incur as a cost of operating.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-header" id="headingsixteen">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapsesixteen"
+                          aria-expanded="true"
+                          aria-controls="collapsesixteen"
+                        >
+                          Who developed the average cost of capital formula?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      class="collapse"
+                      id="collapsesixteen"
+                      aria-labelledby="headingsixteen"
+                      data-parent="#accordion"
+                    >
+                      <div class="panel-body">
+                        <p>
+                          The average cost of capital formula was developed by
+                          Nobel Prize-winning economist Franco Modigliani and
+                          his colleague Merton Miller in 1958. The formula is
+                          used to calculate the weighted average cost of capital
+                          for a company, which is the cost of capital that a
+                          company must pay to finance its operations.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-header" id="headingseventeen">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseseventeen"
+                          aria-expanded="true"
+                          aria-controls="collapseseventeen"
+                        >
+                          What is weighted average cost of capital?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      class="collapse"
+                      id="collapseseventeen"
+                      aria-labelledby="headingseventeen"
+                      data-parent="#accordion"
+                    >
+                      <div class="panel-body">
+                        <p>
+                          Weighted average cost of capital (WACC) is the average
+                          cost of capital for a company, which is the cost of
+                          capital that a company must pay to finance its
+                          operations. It is calculated by taking into account
+                          the cost of debt and equity, and weighting them
+                          according to their respective proportions in the
+                          company's capital structure.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-header" id="headingeighteen">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseeighteen"
+                          aria-expanded="true"
+                          aria-controls="collapseeighteen"
+                        >
+                          What is weighted average cost of capital used for?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      class="collapse"
+                      id="collapseeighteen"
+                      aria-labelledby="headingeighteen"
+                      data-parent="#accordion"
+                    >
+                      <div class="panel-body">
+                        <p>
+                          Weighted average cost of capital (WACC) is used to
+                          evaluate the cost of capital for a company, and is
+                          used to make decisions about investments and
+                          financing. It is also used to compare the cost of
+                          capital of different companies, and to assess the risk
+                          associated with a particular investment.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer__secondary" id="login-footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__top">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="footer__copyright text-center text-md-start">
+                  <p>© 2024 All rights reserved. Vallaris Private Limited</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="footer__logo">
+                  <a href="#"
+                    ><img
+                      class="ms-md-auto"
+                      src="../public/images/logo.png"
+                      alt="WACC Finder"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__note">
+            <p>
+              VALLARIS refers to the VALLARIS network and/or one or more of its
+              member firms, each of which is a separate legal entity.
+            </p>
+            <p>
+              Content on this site is solely intended to provide general
+              information and does not provide any advice or create any
+              relationship, whether legally binding or otherwise. Please consult
+              your advisers for specific advice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/mklb.js"></script>
+    <script src="../public/js/main.js"></script>
+  </body>
+</html>
