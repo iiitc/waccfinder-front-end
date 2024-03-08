@@ -298,11 +298,11 @@ form {
   background-color: rgba(100, 116, 139, 0.377);
   transition: all 0.3s ease;
   &:checked {
-    background-color: rgba(236, 72, 153, 1);
+    background-color: $brown-gold;
 
     &:before {
       transform: translateX(100%) translateY(-50%);
-      border-color: rgba(236, 72, 153, 1);
+      border-color: $brown-gold;
     }
   }
   &::before {
@@ -1138,6 +1138,10 @@ form {
       box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 
       min-height: 100%;
+      &.higlight {
+        border: 3px solid $wacc-red;
+        border-radius: 6px;
+      }
       .plan__card-title {
         padding: 1.2rem;
         background: $blue-black;

@@ -264,11 +264,11 @@ form .error {
   transition: all 0.3s ease;
 }
 .switch:checked {
-  background-color: rgb(236, 72, 153);
+  background-color: #b5914f;
 }
 .switch:checked:before {
   transform: translateX(100%) translateY(-50%);
-  border-color: rgb(236, 72, 153);
+  border-color: #b5914f;
 }
 .switch::before {
   position: absolute;
@@ -1043,6 +1043,10 @@ form .error {
   flex-direction: column;
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
   min-height: 100%;
+}
+#select-plan .plan__packets .plan__card.higlight {
+  border: 3px solid #640000;
+  border-radius: 6px;
 }
 #select-plan .plan__packets .plan__card .plan__card-title {
   padding: 1.2rem;
