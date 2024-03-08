@@ -374,7 +374,7 @@ form .error {
 }
 #login .form-signin form {
   padding: 2rem;
-  background: #f8f8f8;
+  background: #f9f9f9;
   border-radius: 6px;
   border: 1px solid rgba(41, 41, 41, 0.15);
   box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -416,6 +416,13 @@ form .error {
   margin-bottom: 1.5rem;
   position: relative;
 }
+#login form.form-signin .form-group.hidden {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+}
 #login form.form-signin .form-group label {
   display: block;
   font-weight: 400;
@@ -432,9 +439,12 @@ form .error {
   color: #121820;
   background-color: #ffffff;
   background-clip: padding-box;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #9da2ab;
   border-radius: 0.5rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#login form.form-signin .form-group .form-select {
+  border-color: #9da2ab;
 }
 #login form.form-signin .form-group.inpt-pass .sh {
   position: absolute;
@@ -451,6 +461,86 @@ form .error {
 }
 #login form.form-signin .form-group.inpt-pass.show .sh {
   background: url(../images/login/ic-hide-pw.svg) no-repeat center;
+}
+#login form.form-signin .form-group.inpt-phoneno .select {
+  position: absolute;
+  left: 0;
+  top: 3.375rem;
+}
+#login form.form-signin .form-group.inpt-phoneno .form-control {
+  padding-left: 104px;
+}
+#login form.form-signin .form-group.inpt-phoneno .bootstrap-select > select {
+  position: absolute !important;
+  bottom: 0;
+  left: 50%;
+  display: block !important;
+  width: 0.5px !important;
+  height: 100% !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+  border: none;
+  z-index: 0 !important;
+}
+#login form.form-signin .form-group.inpt-phoneno .select-control {
+  position: relative;
+  border: 0;
+  width: 90px;
+  box-shadow: none;
+  left: 12px;
+  bottom: 25px;
+  background: #fff;
+  padding-left: 0;
+  padding-right: 0;
+}
+#login form.form-signin .form-group.inpt-phoneno .select-control.dropdown-toggle .filter-option {
+  position: static;
+  top: 0;
+  left: 0;
+  float: left;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+#login form.form-signin .form-group.inpt-phoneno .select-control.dropdown-toggle .filter-option .filter-option-inner-inner {
+  overflow: hidden;
+}
+#login form.form-signin .form-group.inpt-phoneno .select-control.dropdown-toggle:after {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: url(../images/Account-Images/ic-chevrons-down.svg);
+  border: 0;
+}
+#login form.form-signin .form-group.inpt-phoneno .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 10rem;
+  padding: 0;
+  margin: 0.125rem 0 0;
+  font-size: 1.125rem;
+  color: #000;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #9da2ab;
+  border-radius: 0.25rem;
+  box-shadow: 0px 12px 20px rgba(20, 20, 22, 0.2);
+}
+#login form.form-signin .form-group.inpt-phoneno .dropdown-menu .inner {
+  max-height: 165px;
+  overflow-y: auto;
 }
 #login form.form-signin .custom-control {
   position: relative;
@@ -483,7 +573,7 @@ form .error {
   pointer-events: none;
   content: "";
   background-color: #ffffff;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #9da2ab;
 }
 #login form.form-signin .custom-control .custom-control-label::after {
   position: absolute;
@@ -499,8 +589,8 @@ form .error {
 }
 #login form.form-signin .custom-control .custom-control-input:checked ~ .custom-control-label::before {
   color: #ffffff;
-  border-color: #f54b1a;
-  background-color: #f54b1a;
+  border-color: #b5914f;
+  background-color: #b5914f;
 }
 #login form.form-signin .custom-control .custom-control-input:checked ~ .custom-control-label::after {
   background: url(../images/login/ic-checkmark.svg) no-repeat center;
@@ -562,7 +652,7 @@ form .error {
   line-height: 1.333em;
 }
 #account .profile-info .profile-detail .profile-name .acc-stat {
-  color: #2c2c2c;
+  color: #000;
 }
 #account .profile-info .profile-detail .profile-contact ul {
   padding: 0;
@@ -636,9 +726,12 @@ form .error {
   color: #000;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #9da2ab;
   border-radius: 0.5rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#account.account-edit .form-group .form-select {
+  border-color: #9da2ab;
 }
 #account.account-edit .form-group.inpt-phoneno .select {
   position: absolute;
@@ -712,7 +805,7 @@ form .error {
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #9da2ab;
   border-radius: 0.25rem;
   box-shadow: 0px 12px 20px rgba(20, 20, 22, 0.2);
 }
@@ -746,7 +839,7 @@ form .error {
   margin-bottom: 1.5rem;
   border-radius: 6px;
   border: 1px solid #d6e7ee;
-  color: #2c2c2c;
+  color: #000;
   background: #fff;
 }
 #wacc .wacc__card .small {
@@ -853,10 +946,10 @@ form .error {
   font-size: 1.125rem;
   line-height: 1.5em;
   font-weight: 400;
-  color: #2c2c2c;
+  color: #000;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #9da2ab;
   border-radius: 0.5rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -912,10 +1005,10 @@ form .error {
   line-height: 1.5em;
   font-family: "Graphik", sans-serif;
   font-weight: 400;
-  color: #2c2c2c;
+  color: #000;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #9da2ab;
   border-radius: 0.5rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -1107,7 +1200,7 @@ form .error {
 #select-plan .plan__packets .plan__card .plan__card-body .plan__card-heading .price {
   font-size: 1.3125rem;
   line-height: 1.5em;
-  color: #2c2c2c;
+  color: #000;
   font-weight: 700;
 }
 #select-plan .plan__packets .plan__card .plan__card-body .plan__card-list > ul {
@@ -1119,7 +1212,7 @@ form .error {
 #select-plan .plan__packets .plan__card .plan__card-body .plan__card-list > ul > li {
   font-size: 1.125rem;
   line-height: 1.6rem;
-  color: #2c2c2c;
+  color: #000;
   padding-left: 2rem;
   position: relative;
   margin-bottom: 0.5rem;
@@ -1136,7 +1229,7 @@ form .error {
 #select-plan .plan__packets .plan__card .plan__card-body .plan__card-list > ul li {
   font-size: 1.125rem;
   line-height: 1.6rem;
-  color: #2c2c2c;
+  color: #000;
 }
 #select-plan .plan__packets .plan__card .plan__card-body .plan__card-btn {
   padding-top: 1.5rem;
@@ -1160,9 +1253,9 @@ form .error {
   border: 0;
 }
 #select-plan .faq-block .accordion-item .accordion-button {
-  border-bottom: 1px solid #e2e2e2;
+  border-bottom: 1px solid #9da2ab;
   font-weight: 600;
-  color: #2c2c2c;
+  color: #000;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -1176,7 +1269,7 @@ form .error {
   border-color: transparent;
   outline: 0;
   box-shadow: none;
-  border-bottom: 1px solid #e2e2e2;
+  border-bottom: 1px solid #9da2ab;
 }
 
 /**
@@ -1279,7 +1372,7 @@ form .error {
 }
 #activation .activation .auth__stepper .step {
   text-align: center;
-  color: #8a8a8a;
+  color: #000;
   position: relative;
 }
 #activation .activation .auth__stepper .step .number {
@@ -1288,7 +1381,7 @@ form .error {
   height: 2rem;
   margin: 0 auto 0.5rem;
   padding: 0.25rem 0.6875rem;
-  border: 1px solid #8a8a8a;
+  border: 1px solid #9da2ab;
   border-radius: 50px;
 }
 #activation .activation .auth__stepper .step.current {
@@ -1707,7 +1800,7 @@ form .error {
     line-height: 1.333em;
   }
   #account .profile-info .profile-detail .profile-name .acc-stat {
-    color: #2c2c2c;
+    color: #000;
   }
   #account .profile-info .profile-detail .profile-contact ul {
     padding: 0;
