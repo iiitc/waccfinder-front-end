@@ -2,14 +2,18 @@ $blue-black: #121820;
 $cadet-grey: #9da2ab;
 $wacc-red: #640000;
 
-$text-color: #2c2c2c;
+$card-bg-grey: #f9f9f9;
+
+$oxford-blue: #001b4b;
+
+$text-color: #000;
 $text-color-light: #3d3d3d;
 $brown-gold: #b5914f;
 $brown-gold-darker: #7a6131;
 $azure-white: #d6e7ee;
 $pale-cerulean: rgb(151, 202, 219, 0.6);
 $form-outline: rgba(181, 145, 79, 0.25);
-$input-border: #e2e2e2;
+$input-border: #9da2ab;
 
 * {
   box-sizing: border-box;
@@ -420,7 +424,7 @@ form {
     }
     form {
       padding: 2rem;
-      background: #f8f8f8;
+      background: $card-bg-grey;
       border-radius: 6px;
       border: 1px solid rgb(41 41 41 / 15%);
       box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
@@ -466,6 +470,13 @@ form {
     .form-group {
       margin-bottom: 1.5rem;
       position: relative;
+      &.hidden {
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+        margin: 0;
+        padding: 0;
+      }
       label {
         display: block;
         font-weight: 400;
@@ -485,7 +496,9 @@ form {
         border: 1px solid $input-border;
         border-radius: 0.5rem;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-        
+      }
+      .form-select {
+        border-color: $input-border;
       }
       &.inpt-pass {
         .sh {
@@ -638,8 +651,8 @@ form {
       }
       .custom-control-input:checked ~ .custom-control-label::before {
         color: #ffffff;
-        border-color: #f54b1a;
-        background-color: #f54b1a;
+        border-color: $brown-gold;
+        background-color: $brown-gold;
       }
       .custom-control-input:checked ~ .custom-control-label::after {
         background: url(../images/login/ic-checkmark.svg) no-repeat center;
@@ -787,6 +800,9 @@ form {
         border: 1px solid $input-border;
         border-radius: 0.5rem;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      .form-select {
+        border-color: $input-border;
       }
       &.inpt-phoneno {
         .select {
@@ -1478,7 +1494,7 @@ form {
       margin-bottom: 2.5rem;
       .step {
         text-align: center;
-        color: #8a8a8a;
+        color: $text-color;
         position: relative;
         .number {
           display: block;
@@ -1486,7 +1502,7 @@ form {
           height: 2rem;
           margin: 0 auto 0.5rem;
           padding: 0.25rem 0.6875rem;
-          border: 1px solid #8a8a8a;
+          border: 1px solid $input-border;
           border-radius: 50px;
         }
         &.current {
