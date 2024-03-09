@@ -9,8 +9,10 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.3/build/css/intlTelInput.css"
     />
     <link
       rel="stylesheet"
@@ -48,143 +50,10 @@
           <label>Email address</label>
           <input class="form-control" name="email" type="email" value="" />
         </div>
-        <div class="form-group inpt-phoneno">
-          <label>Phone no.</label>
-          <div class="dropdown bootstrap-select select dropup">
-            <select name="phone_code" class="select" tabindex="-98">
-              <option value="+1" selected="selected">+1</option>
-              <option value="+1242">+1242</option>
-              <option value="+1246">+1246</option>
-              <option value="+1264">+1264</option>
-              <option value="+1268">+1268</option>
-              <option value="+1284">+1284</option>
-              <option value="+1340">+1340</option>
-              <option value="+1441">+1441</option></select
-            ><button
-              type="button"
-              class="btn dropdown-toggle select-control"
-              data-bs-toggle="dropdown"
-              role="combobox"
-              aria-owns="bs-select-2"
-              aria-haspopup="listbox"
-              aria-expanded="false"
-              title="+1"
-            >
-              <div class="filter-option">
-                <div class="filter-option-inner">
-                  <div class="filter-option-inner-inner">+1</div>
-                </div>
-              </div>
-            </button>
-            <div class="dropdown-menu">
-              <div
-                class="inner show"
-                role="listbox"
-                id="bs-select-2"
-                tabindex="-1"
-                aria-activedescendant="bs-select-2-1"
-                style="max-height: 165px; overflow-y: auto"
-              >
-                <ul
-                  class="dropdown-menu inner show"
-                  role="presentation"
-                  style="margin-top: 0px; margin-bottom: 0px"
-                >
-                  <li>
-                    <a
-                      role="option"
-                      class="dropdown-item"
-                      id="bs-select-2-0"
-                      tabindex="0"
-                      ><span class="text">+1</span></a
-                    >
-                  </li>
-                  <li class="selected active">
-                    <a
-                      role="option"
-                      class="dropdown-item active selected"
-                      id="bs-select-2-1"
-                      tabindex="0"
-                      aria-setsize="242"
-                      aria-posinset="2"
-                      aria-selected="true"
-                      ><span class="text">+1</span></a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      role="option"
-                      class="dropdown-item"
-                      id="bs-select-2-2"
-                      tabindex="0"
-                      ><span class="text">+1242</span></a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      role="option"
-                      class="dropdown-item"
-                      id="bs-select-2-3"
-                      tabindex="0"
-                      ><span class="text">+1246</span></a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      role="option"
-                      class="dropdown-item"
-                      id="bs-select-2-4"
-                      tabindex="0"
-                      ><span class="text">+1264</span></a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      role="option"
-                      class="dropdown-item"
-                      id="bs-select-2-5"
-                      tabindex="0"
-                      ><span class="text">+1268</span></a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      role="option"
-                      class="dropdown-item"
-                      id="bs-select-2-6"
-                      tabindex="0"
-                      ><span class="text">+1284</span></a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      role="option"
-                      class="dropdown-item"
-                      id="bs-select-2-7"
-                      tabindex="0"
-                      ><span class="text">+1340</span></a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      role="option"
-                      class="dropdown-item"
-                      id="bs-select-2-8"
-                      tabindex="0"
-                      ><span class="text">+1441</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <input
-            id="phone"
-            class="form-control"
-            type="tel"
-            name="phone"
-            value="123456789"
-          />
+        <div class="form-group">
+          <label for="phone">Phone no.</label>
+          <input type="tel" id="phone" class="form-control" name="phone" />
+          <div class="error-message" id="phone-error"></div>
         </div>
         <div class="form-group inpt-pass">
           <label>Password</label>
@@ -271,6 +140,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.3/build/js/intlTelInput.js"></script>
     <script src="../assets/js/mklb.js"></script>
     <script src="../public/js/main.js"></script>
   </body>

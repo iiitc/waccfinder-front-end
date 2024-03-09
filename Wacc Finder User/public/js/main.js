@@ -79,6 +79,12 @@ function getUserInitials(name) {
   return initials;
 }
 
+// Function to validate email address format
+function isValidEmail(email) {
+  var emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+  return emailRegex.test(email);
+}
+
 $(document).ready(function () {
   /**
    * Login Page Script
@@ -288,6 +294,82 @@ $(document).ready(function () {
         $input.attr("type", "password");
         $(this).text("Show");
         $form_group.removeClass("show");
+      }
+    });
+  }
+
+  /**
+   * Phone Number Input
+   */
+  if ($("#phone").length > 0) {
+    var input = document.querySelector("#phone");
+    var iti = window.intlTelInput(input, {
+      utilsScript:
+        "https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.3/build/js/utils.js",
+      separateDialCode: true,
+      showSelectedDialCode: true,
+      allowDropdown: true,
+      showFlags: false,
+    });
+
+    // store the instance variable so we can access it in the console e.g. window.iti.getNumber()
+    window.iti = iti;
+  }
+
+  /**
+   * Profile Form Validation
+   */
+  if ($("#profile-form").length > 0) {
+    $("#profile-form").submit(function (e) {
+      e.preventDefault(); // Prevent default form submission
+
+      // Clear any previous error states and messages
+      $(".error-message").text("");
+      $(".form-control").removeClass("error-input");
+
+      // Get form inputs
+      var name = $("#name").val().trim();
+      var occupation = $("#occupation").val().trim();
+      var phone = $("#phone").val().trim();
+      var email = $("#email").val().trim();
+
+      var isValid = true;
+
+      // Validate Name
+      if (name === "") {
+        $("#name").addClass("error-input");
+        $("#name-error").text("Please enter your name.");
+        isValid = false;
+      }
+
+      // Validate Occupation
+      if (occupation === "") {
+        $("#occupation").addClass("error-input");
+        $("#occupation-error").text("Please select your occupation.");
+        isValid = false;
+      }
+
+      // Validate Phone Number
+      if (phone === "") {
+        $("#phone").addClass("error-input");
+        $("#phone-error").text("Please enter your phone number.");
+        isValid = false;
+      }
+
+      // Validate Email Address
+      if (email === "") {
+        $("#email").addClass("error-input");
+        $("#email-error").text("Please enter your email address.");
+        isValid = false;
+      } else if (!isValidEmail(email)) {
+        $("#email").addClass("error-input");
+        $("#email-error").text("Please enter a valid email address.");
+        isValid = false;
+      }
+
+      // If all validations pass, submit the form
+      if (isValid) {
+        this.submit();
       }
     });
   }

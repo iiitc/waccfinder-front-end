@@ -240,6 +240,13 @@ form select.error {
 form .error {
   color: #640000;
 }
+form .form-group .iti {
+  width: 100%;
+}
+form .form-group .iti .iti__flag-container .iti__selected-flag {
+  background-color: #f9f9f9;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
 
 .btn-deactivate {
   background-color: #640000;
