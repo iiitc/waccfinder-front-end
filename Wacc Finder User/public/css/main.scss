@@ -2,19 +2,27 @@
 $blue-black: #121820;
 $cadet-grey: #9da2ab;
 $wacc-red: #640000;
+$brown-gold: #b5914f;
+
+$oxford_blue: #001b4b;
+$dark_cerulean: #02457A;
+$sea_blue: #015F89;
+$pale_cerulean: #97CADB;
+$azure-white: #d6e7ee;
+$grey_221: #dddddd;
+$grey_242: #f2f2f2;
+$grey_249: #001b4b;
 
 $card-bg-grey: #f9f9f9;
 
-$oxford-blue: #001b4b;
 
 $text-color: #000;
 $text-color-light: #3d3d3d;
-$brown-gold: #b5914f;
 $brown-gold-darker: #7a6131;
-$azure-white: #d6e7ee;
 $pale-cerulean: rgb(151, 202, 219, 0.6);
 $form-outline: rgba(181, 145, 79, 0.25);
 $input-border: #9da2ab;
+
 
 * {
   box-sizing: border-box;
@@ -1714,11 +1722,7 @@ form {
       text-align: center;
       h3 {
         margin-bottom: 1rem;
-        background: linear-gradient(
-          90deg,
-          $brown-gold 0%,
-          $brown-gold-darker 87.68%
-        );
+        background: linear-gradient(90deg, $brown-gold 0%, $brown-gold 87.68%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -1778,7 +1782,7 @@ form {
 * Help Center Page CSS
 */
 #helpcenter {
-  margin-top: 50px; 
+  margin-top: 50px;
   .nav-pills {
     .nav-link {
       text-align: left;

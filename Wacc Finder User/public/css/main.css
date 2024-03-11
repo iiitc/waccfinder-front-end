@@ -1568,7 +1568,7 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
 }
 #activation .activation .auth__notiftext h3 {
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, #b5914f 0%, #7a6131 87.68%);
+  background: linear-gradient(90deg, #b5914f 0%, #b5914f 87.68%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
