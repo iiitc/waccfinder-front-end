@@ -5,9 +5,9 @@ $wacc-red: #640000;
 $brown-gold: #b5914f;
 
 $oxford_blue: #001b4b;
-$dark_cerulean: #02457A;
-$sea_blue: #015F89;
-$pale_cerulean: #97CADB;
+$dark_cerulean: #02457a;
+$sea_blue: #015f89;
+$pale_cerulean: #97cadb;
 $azure-white: #d6e7ee;
 $grey_221: #dddddd;
 $grey_242: #f2f2f2;
@@ -15,14 +15,12 @@ $grey_249: #001b4b;
 
 $card-bg-grey: #f9f9f9;
 
-
 $text-color: #000;
 $text-color-light: #3d3d3d;
-$brown-gold-darker: #7a6131;
+// $brown-gold-darker: #7a6131;
 $pale-cerulean: rgb(151, 202, 219, 0.6);
 $form-outline: rgba(181, 145, 79, 0.25);
 $input-border: #9da2ab;
-
 
 * {
   box-sizing: border-box;
@@ -632,10 +630,11 @@ form {
         position: absolute;
         display: inline-block;
         max-width: 100%;
-        bottom: 0;
+        top: 28px;
         left: 0;
 
-        &__button {
+        &__button,
+        &__input {
           padding: 0.5rem 1rem;
           background-color: $card-bg-grey;
           color: $text-color;
@@ -650,25 +649,18 @@ form {
           &:focus {
             outline: none;
           }
-
-          &::after {
-            content: "";
-            width: 15px;
-            height: 15px;
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-            background-position: center;
-            background-size: contain;
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-          }
-
-          .zmdi-chevron-down {
-            position: absolute;
-            right: 10px;
-            top: 12px;
-          }
+        }
+        &::after {
+          content: "";
+          width: 15px;
+          height: 15px;
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+          background-position: center;
+          background-size: contain;
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
         }
 
         &__list {
@@ -998,10 +990,11 @@ form {
         position: absolute;
         display: inline-block;
         max-width: 100%;
-        bottom: 0;
+        top: 28px;
         left: 0;
 
-        &__button {
+        &__button,
+        &__input {
           padding: 0.5rem 1rem;
           background-color: $card-bg-grey;
           color: $text-color;
@@ -1016,25 +1009,18 @@ form {
           &:focus {
             outline: none;
           }
-
-          &::after {
-            content: "";
-            width: 15px;
-            height: 15px;
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-            background-position: center;
-            background-size: contain;
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-          }
-
-          .zmdi-chevron-down {
-            position: absolute;
-            right: 10px;
-            top: 12px;
-          }
+        }
+        &::after {
+          content: "";
+          width: 15px;
+          height: 15px;
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+          background-position: center;
+          background-size: contain;
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
         }
 
         &__list {

@@ -330,7 +330,7 @@ $(document).ready(function () {
       // Get form inputs
       var name = $("#name").val().trim();
       var occupation = $("#occupation").val().trim();
-      var phone = $("#phone").val().trim();
+      var phone = $("#phone-num").val().trim();
       var email = $("#email").val().trim();
 
       var isValid = true;
@@ -351,7 +351,7 @@ $(document).ready(function () {
 
       // Validate Phone Number
       if (phone === "") {
-        $("#phone").addClass("error-input");
+        $("#phone-num").addClass("error-input");
         $("#phone-error").text("Please enter your phone number.");
         isValid = false;
       }
@@ -375,20 +375,106 @@ $(document).ready(function () {
   }
 
   /**
-   * Profile Form Validation
+   * Rename Form Validation
+   */
+  if ($("#rename_form").length > 0) {
+    $("#rename_form").submit(function (e) {
+      e.preventDefault(); // Prevent default form submission
+
+      // Clear any previous error states and messages
+      $(".error-message").text("");
+      $(".form-control").removeClass("error-input");
+
+      // Get form inputs
+      var rename = $("#wacc_name").val().trim();
+
+      var isValid = true;
+
+      // Validate Name
+      if (rename === "") {
+        $("#wacc_name").addClass("error-input");
+        $("#rename-error").text("Please enter your name.");
+        isValid = false;
+      }
+
+      // If all validations pass, submit the form
+      if (isValid) {
+        this.submit();
+      }
+    });
+  }
+
+  /**
+   * Register Form Validation
+   */
+  if ($("#register_form").length > 0) {
+    $("#register_form").submit(function (e) {
+      e.preventDefault(); // Prevent default form submission
+
+      // Clear any previous error states and messages
+      $(".error-message").text("");
+      $(".form-control").removeClass("error-input");
+
+      // Get form inputs
+      var fname = $("#fname").val().trim();
+      var email = $("#register-email").val().trim();
+      var phone = $("#phone-num").val().trim();
+      var occupation = $("#register-occupation").val().trim();
+
+      var isValid = true;
+
+      // Validate Name
+      if (fname === "") {
+        $("#fname").addClass("error-input");
+        $("#fname-error").text("Please enter your name.");
+        isValid = false;
+      }
+
+      // Validate Occupation
+      if (occupation === "") {
+        $("#register-occupation").addClass("error-input");
+        $("#occupation-error").text("Please select your occupation.");
+        isValid = false;
+      }
+
+      // Validate Phone Number
+      if (phone === "") {
+        $("#phone-num").addClass("error-input");
+        $("#phone-error").text("Please enter your phone number.");
+        isValid = false;
+      }
+
+      // Validate Email Address
+      if (email === "") {
+        $("#register-email").addClass("error-input");
+        $("#email-error").text("Please enter your email address.");
+        isValid = false;
+      } else if (!isValidEmail(email)) {
+        $("#register-email").addClass("error-input");
+        $("#email-error").text("Please enter a valid email address.");
+        isValid = false;
+      }
+
+      // If all validations pass, submit the form
+      if (isValid) {
+        this.submit();
+      }
+    });
+  }
+
+  /**
+   * Custom Dropdown Validation
    */
   if ($(".select-dropdown").length > 0) {
-    $(".select-dropdown__button").on("click", function (e) {
+    $(".select-dropdown__input").on("click", function (e) {
       e.preventDefault();
       $(".select-dropdown__list").toggleClass("active");
     });
+
     $(".select-dropdown__list-item").on("click", function () {
       var itemValue = $(this).data("value");
       console.log(itemValue);
-      $(".select-dropdown__button span")
-        .text($(this).text())
-        .parent()
-        .attr("data-value", itemValue);
+      $("#selected-code").val(itemValue);
       $(".select-dropdown__list").toggleClass("active");
     });
   }

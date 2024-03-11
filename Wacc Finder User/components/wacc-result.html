@@ -513,23 +513,20 @@
                       ></div>
                     </div>
                     <div class="modal-body text-center">
-                      <form action="/update-wacc/94">
-                        <input
-                          type="hidden"
-                          name="_token"
-                          value="Nnv2Bbsb1ATGhw7iIhTKzrfVeWnVgnAdT2qT4VB4"
-                        />
+                      <form action="/update-wacc/94" id="rename_form">
                         <div class="form-group">
                           <label class="fw-bold fs-3 mb-3"
                             >Calculation name</label
                           >
                           <input
                             name="wacc_name"
+                            id="wacc_name"
                             class="form-control"
                             type="text"
                             value="WACC Title 1"
                             placeholder="Type WACC Name"
                           />
+                          <div class="error-message" id="rename-error"></div>
                         </div>
                         <div class="form-action mt-4">
                           <a
