@@ -141,7 +141,1507 @@
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-lg-7"></div>
+            <div class="col-lg-7">
+              <section class="calculator__action">
+                <div class="container">
+                  <!-- Tab navigation-->
+                  <ul class="calctab nav nav-tabs" id="calcTab" role="tablist">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        id="calc1-tab"
+                        data-toggle="tab"
+                        href="#calc1"
+                        role="tab"
+                        aria-controls="calc1"
+                        aria-selected="true"
+                        >Steps 1</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="calc2-tab"
+                        data-toggle="tab"
+                        href="#calc2"
+                        role="tab"
+                        aria-controls="calc2"
+                        aria-selected="false"
+                        >Steps 2</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="calc3-tab"
+                        data-toggle="tab"
+                        href="#calc3"
+                        role="tab"
+                        aria-controls="calc3"
+                        aria-selected="false"
+                        >Steps 3</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="calc4-tab"
+                        data-toggle="tab"
+                        href="#calc4"
+                        role="tab"
+                        aria-controls="calc4"
+                        aria-selected="false"
+                        >Steps 4</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="calc5-tab"
+                        data-toggle="tab"
+                        href="#calc5"
+                        role="tab"
+                        aria-controls="calc5"
+                        aria-selected="false"
+                        >Steps 5</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="calc6-tab"
+                        data-toggle="tab"
+                        href="#calc6"
+                        role="tab"
+                        aria-controls="calc6"
+                        aria-selected="false"
+                        >Steps 6</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="calc7-tab"
+                        data-toggle="tab"
+                        href="#calc7"
+                        role="tab"
+                        aria-controls="calc7"
+                        aria-selected="false"
+                        >Steps 7</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="calc8-tab"
+                        data-toggle="tab"
+                        href="#calc8"
+                        role="tab"
+                        aria-controls="calc8"
+                        aria-selected="false"
+                        >Steps 8</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="calc9-tab"
+                        data-toggle="tab"
+                        href="#calc9"
+                        role="tab"
+                        aria-controls="calc8"
+                        aria-selected="false"
+                        >Steps 9</a
+                      >
+                    </li>
+                  </ul>
+                  <!-- Tab content-->
+                  <form
+                    class="forms"
+                    id="frm_calc"
+                    action="https://waccfinder.com/get-started"
+                    data-url="https://waccfinder.com/dashboard/filter-year"
+                    method="POST"
+                  >
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="pFC7vS4YJ7mrErs8YFJanP8IFfx8ZVquDLv14X1G"
+                    />
+                    <div class="tab-content" id="calcTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="calc1"
+                        role="tabpanel"
+                        aria-labelledby="home-tab"
+                      >
+                        <div class="row justify-content-center">
+                          <!-- <div class="test-number">7.22</div>
+                          <div class="test-result"></div> -->
+                          <div class="col-lg-5 col-md-6">
+                            <div class="stepper"><span>1</span></div>
+                            <div
+                              class="calculator__question"
+                              data-err="Please select duration of cash flow to continue"
+                            >
+                              <div class="form-group">
+                                <label for="duration"
+                                  >Select duration of cash flow</label
+                                >
+                                <div
+                                  class="dropdown bootstrap-select select"
+                                  style="width: 100%"
+                                >
+                                  <select
+                                    id="duration"
+                                    name="duration"
+                                    class="select"
+                                    title="Select duration of cash flow"
+                                    tabindex="-98"
+                                  >
+                                    <option
+                                      class="bs-title-option"
+                                      value=""
+                                    ></option>
+                                    <option value="5">1-5 years</option>
+                                    <option value="10">
+                                      5 years and above
+                                    </option></select
+                                  ><button
+                                    type="button"
+                                    class="btn dropdown-toggle select-control bs-placeholder"
+                                    data-toggle="dropdown"
+                                    role="combobox"
+                                    aria-owns="bs-select-1"
+                                    aria-haspopup="listbox"
+                                    aria-expanded="false"
+                                    data-id="duration"
+                                    title="Select duration of cash flow"
+                                  >
+                                    <div class="filter-option">
+                                      <div class="filter-option-inner">
+                                        <div class="filter-option-inner-inner">
+                                          Select duration of cash flow
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </button>
+                                  <div
+                                    class="dropdown-menu"
+                                    x-placement="bottom-start"
+                                    style="
+                                      overflow: hidden;
+                                      position: absolute;
+                                      transform: translate3d(0px, 68px, 0px);
+                                      top: 0px;
+                                      left: 0px;
+                                      will-change: transform;
+                                    "
+                                  >
+                                    <div
+                                      class="inner show"
+                                      role="listbox"
+                                      id="bs-select-1"
+                                      tabindex="-1"
+                                      style="overflow-y: auto"
+                                    >
+                                      <ul
+                                        class="dropdown-menu inner show"
+                                        role="presentation"
+                                        style="
+                                          margin-top: 0px;
+                                          margin-bottom: 0px;
+                                        "
+                                      >
+                                        <li>
+                                          <a
+                                            role="option"
+                                            class="dropdown-item"
+                                            id="bs-select-1-0"
+                                            tabindex="0"
+                                            ><span class="text"
+                                              >1-5 years</span
+                                            ></a
+                                          >
+                                        </li>
+                                        <li>
+                                          <a
+                                            role="option"
+                                            class="dropdown-item"
+                                            id="bs-select-1-1"
+                                            tabindex="0"
+                                            ><span class="text"
+                                              >5 years and above</span
+                                            ></a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-notes">
+                                <p>
+                                  If the cash flows belong to a going concern
+                                  business, leave it at 5 years and above.
+                                </p>
+                              </div>
+                              <div class="form-action">
+                                <button class="btn btn__primary" type="submit">
+                                  OK</button
+                                ><span class="btn-note"
+                                  ><small>Press &nbsp;</small><b>Enter</b></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="calc2"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab"
+                      >
+                        <div class="row justify-content-center">
+                          <div class="col-lg-5 col-md-6">
+                            <div class="stepper"><span>2</span></div>
+                            <div
+                              class="calculator__question"
+                              data-err="Please select valuation date to continue"
+                            >
+                              <div class="form-group">
+                                <label>Select valuation date</label>
+                                <div class="row">
+                                  <div class="col">
+                                    <div
+                                      class="dropdown bootstrap-select select date-select"
+                                      style="width: 100%"
+                                    >
+                                      <select
+                                        class="select date-select"
+                                        id="month"
+                                        title="Select month"
+                                        name="month"
+                                        tabindex="-98"
+                                      >
+                                        <option
+                                          class="bs-title-option"
+                                          value=""
+                                        ></option>
+                                        <option value="January">January</option>
+                                        <option value="February">
+                                          February
+                                        </option>
+                                        <option value="March">March</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">
+                                          September
+                                        </option>
+                                        <option value="October">October</option>
+                                        <option value="November">
+                                          November
+                                        </option>
+                                        <option value="December">
+                                          December
+                                        </option></select
+                                      ><button
+                                        type="button"
+                                        class="btn dropdown-toggle select-control bs-placeholder"
+                                        data-toggle="dropdown"
+                                        role="combobox"
+                                        aria-owns="bs-select-2"
+                                        aria-haspopup="listbox"
+                                        aria-expanded="false"
+                                        data-id="month"
+                                        title="Select month"
+                                      >
+                                        <div class="filter-option">
+                                          <div class="filter-option-inner">
+                                            <div
+                                              class="filter-option-inner-inner"
+                                            >
+                                              Select month
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </button>
+                                      <div class="dropdown-menu">
+                                        <div
+                                          class="inner show"
+                                          role="listbox"
+                                          id="bs-select-2"
+                                          tabindex="-1"
+                                        >
+                                          <ul
+                                            class="dropdown-menu inner show"
+                                            role="presentation"
+                                          ></ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div
+                                      class="dropdown bootstrap-select select import date-select"
+                                      style="width: 100%"
+                                    >
+                                      <select
+                                        class="select import date-select"
+                                        id="year"
+                                        title="Select year"
+                                        name="year"
+                                        tabindex="-98"
+                                      >
+                                        <option
+                                          class="bs-title-option"
+                                          value=""
+                                        ></option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">
+                                          2020
+                                        </option></select
+                                      ><button
+                                        type="button"
+                                        class="btn dropdown-toggle select-control bs-placeholder"
+                                        data-toggle="dropdown"
+                                        role="combobox"
+                                        aria-owns="bs-select-3"
+                                        aria-haspopup="listbox"
+                                        aria-expanded="false"
+                                        data-id="year"
+                                        title="Select year"
+                                      >
+                                        <div class="filter-option">
+                                          <div class="filter-option-inner">
+                                            <div
+                                              class="filter-option-inner-inner"
+                                            >
+                                              Select year
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </button>
+                                      <div class="dropdown-menu">
+                                        <div
+                                          class="inner show"
+                                          role="listbox"
+                                          id="bs-select-3"
+                                          tabindex="-1"
+                                        >
+                                          <ul
+                                            class="dropdown-menu inner show"
+                                            role="presentation"
+                                          ></ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-action">
+                                <button
+                                  class="btn btn__primary"
+                                  type="submit"
+                                  onclick="button_process(this, 'month', 'text-equity_risk')"
+                                >
+                                  OK</button
+                                ><span class="btn-note"
+                                  ><small>Press &nbsp;</small><b>Enter</b></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="calc3"
+                        role="tabpanel"
+                        aria-labelledby="contact-tab"
+                      >
+                        <div class="row justify-content-center">
+                          <div class="col-lg-5 col-md-6">
+                            <div class="stepper"><span>3</span></div>
+                            <div
+                              class="calculator__question"
+                              data-err="Please select yout country of operation to continue"
+                            >
+                              <div class="form-group">
+                                <label for="country"
+                                  >Select your country of operation</label
+                                >
+                                <div
+                                  class="dropdown bootstrap-select select select-chain"
+                                  style="width: 100%"
+                                >
+                                  <select
+                                    name="country"
+                                    class="select select-chain"
+                                    title="Select country"
+                                    data-live-search="true"
+                                    data-target="equity_risk"
+                                    data-url="https://waccfinder.com/get-currency"
+                                    tabindex="-98"
+                                  >
+                                    <option
+                                      class="bs-title-option"
+                                      value=""
+                                    ></option>
+                                    <option
+                                      value="4.2%"
+                                      data-currency="AUD"
+                                      data-tax="30%"
+                                      data-id="7"
+                                    >
+                                      Australia
+                                    </option>
+                                    <option
+                                      value="4.2%"
+                                      data-currency="CAD"
+                                      data-tax="27%"
+                                      data-id="26"
+                                    >
+                                      Canada
+                                    </option>
+                                    <option
+                                      value="4.2%"
+                                      data-currency="DKK"
+                                      data-tax="22%"
+                                      data-id="38"
+                                    >
+                                      Denmark
+                                    </option>
+                                    <option
+                                      value="4.2%"
+                                      data-currency="EUR"
+                                      data-tax="30%"
+                                      data-id="50"
+                                    >
+                                      Germany
+                                    </option>
+                                    <option
+                                      value="4.2%"
+                                      data-currency="CHF"
+                                      data-tax="13%"
+                                      data-id="73"
+                                    >
+                                      Liechtenstein
+                                    </option>
+                                    <option
+                                      value="4.2%"
+                                      data-currency="EUR"
+                                      data-tax="25%"
+                                      data-id="75"
+                                    >
+                                      Luxembourg
+                                    </option>
+                                    <option
+                                      value="4.2%"
+                                      data-currency="EUR"
+                                      data-tax="26%"
+                                      data-id="90"
+                                    >
+                                      Netherlands
+                                    </option>
+                                    <option
+                                      value="4.2%"
+                                      data-currency="NZD"
+                                      data-tax="28%"
+                                      data-id="91"
+                                    >
+                                      New Zealand
+                                    </option>
+                                    <option
+                                      value="4.2%"
+                                      data-currency="NOK"
+                                      data-tax="22%"
+                                      data-id="95"
+                                    >
+                                      Norway
+                                    </option>
+                                    <option
+                                      value="4.2%"
+                                      data-currency="SGD"
+                                      data-tax="17%"
+                                      data-id="112"
+                                    >
+                                      Singapore
+                                    </option>
+                                    <option
+                                      value="4.2%"
+                                      data-currency="SEK"
+                                      data-tax="21%"
+                                      data-id="121"
+                                    >
+                                      Sweden
+                                    </option>
+                                    <option
+                                      value="4.2%"
+                                      data-currency="CHF"
+                                      data-tax="15%"
+                                      data-id="122"
+                                    >
+                                      Switzerland
+                                    </option>
+                                    <option
+                                      value="4.2%"
+                                      data-currency="USD"
+                                      data-tax="21%"
+                                      data-id="135"
+                                    >
+                                      United States
+                                    </option></select
+                                  ><button
+                                    type="button"
+                                    class="btn dropdown-toggle select-control bs-placeholder"
+                                    data-toggle="dropdown"
+                                    role="combobox"
+                                    aria-owns="bs-select-4"
+                                    aria-haspopup="listbox"
+                                    aria-expanded="false"
+                                    title="Select country"
+                                  >
+                                    <div class="filter-option">
+                                      <div class="filter-option-inner">
+                                        <div class="filter-option-inner-inner">
+                                          Select country
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </button>
+                                  <div class="dropdown-menu">
+                                    <div class="bs-searchbox">
+                                      <input
+                                        type="search"
+                                        class="form-control"
+                                        autocomplete="off"
+                                        placeholder="Search here.."
+                                        role="combobox"
+                                        aria-label="Search"
+                                        aria-controls="bs-select-4"
+                                        aria-autocomplete="list"
+                                      />
+                                    </div>
+                                    <div
+                                      class="inner show"
+                                      role="listbox"
+                                      id="bs-select-4"
+                                      tabindex="-1"
+                                    >
+                                      <ul
+                                        class="dropdown-menu inner show"
+                                        role="presentation"
+                                      ></ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <input type="hidden" name="country_name" />
+                              <input
+                                type="hidden"
+                                class="form-control"
+                                id="equity_risk"
+                                name="equity_risk"
+                                placeholder="Equity risk premium"
+                                readonly="readonly"
+                              />
+                              <div class="form-notes">
+                                <p>
+                                  Select based on geography of business
+                                  operation, not country of incorporation. If
+                                  you have more than one, please pick your
+                                  principal country of operation, i.e. where the
+                                  <br />largest percentage of revenue arises.
+                                </p>
+                                <p>
+                                  When you checkout, select Subscription plan
+                                  which allows <br />
+                                  you to input multiple countries. (2) Only
+                                  AAA-rated<br />
+                                  countries are included in this list. To unlock
+                                  WACCFinder's <br />full list of countries,
+                                  i.e. AAA-rated and non-rated, please <br />
+                                  select Subscription plan at checkout.
+                                </p>
+                              </div>
+                              <div class="form-watch">
+                                <a
+                                  class="btn-watch"
+                                  href="https://youtu.be/yAoLSRbwxL8"
+                                  data-lity="data-lity"
+                                >
+                                  <div class="icon-watch">
+                                    <img
+                                      src="https://waccfinder.com/wacc/images/ic-watch-video.svg"
+                                      alt="icon"
+                                    />
+                                  </div>
+                                  <span>Watch The Video</span></a
+                                >
+                              </div>
+                              <div class="form-action">
+                                <button
+                                  class="btn btn__primary"
+                                  type="submit"
+                                  onclick="button_process(this, 'country', 'text-risk_rate')"
+                                >
+                                  OK</button
+                                ><span class="btn-note"
+                                  ><small>Press &nbsp;</small><b>Enter</b></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="calc4"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab"
+                      >
+                        <div class="row justify-content-center">
+                          <div class="col-lg-5 col-md-6">
+                            <div class="stepper"><span>4</span></div>
+                            <div
+                              class="calculator__question"
+                              data-err="Please select your transactional currency to continue"
+                            >
+                              <div class="form-group">
+                                <label for="currency"
+                                  >Select your transactional currency</label
+                                >
+                                <div
+                                  class="dropdown bootstrap-select select select-chain"
+                                  style="width: 100%"
+                                >
+                                  <select
+                                    id="selectCur"
+                                    name="currency"
+                                    class="select select-chain"
+                                    title="Select currency"
+                                    data-live-search="true"
+                                    data-target="risk_rate"
+                                    data-text="text-risk_rate"
+                                    tabindex="-98"
+                                  >
+                                    <option
+                                      class="bs-title-option"
+                                      value=""
+                                    ></option>
+                                    <option value="0%">AUD</option>
+                                    <option value="0%">CAD</option>
+                                    <option value="0%">DKK</option>
+                                    <option value="0%">EUR</option>
+                                    <option value="0%">CHF</option>
+                                    <option value="0%">NZD</option>
+                                    <option value="0%">NOK</option>
+                                    <option value="0%">SGD</option>
+                                    <option value="0%">SEK</option>
+                                    <option value="0%">USD</option></select
+                                  ><button
+                                    type="button"
+                                    class="btn dropdown-toggle select-control bs-placeholder"
+                                    data-toggle="dropdown"
+                                    role="combobox"
+                                    aria-owns="bs-select-5"
+                                    aria-haspopup="listbox"
+                                    aria-expanded="false"
+                                    data-id="selectCur"
+                                    title="Select currency"
+                                  >
+                                    <div class="filter-option">
+                                      <div class="filter-option-inner">
+                                        <div class="filter-option-inner-inner">
+                                          Select currency
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </button>
+                                  <div class="dropdown-menu">
+                                    <div class="bs-searchbox">
+                                      <input
+                                        type="search"
+                                        class="form-control"
+                                        autocomplete="off"
+                                        placeholder="Search here.."
+                                        role="combobox"
+                                        aria-label="Search"
+                                        aria-controls="bs-select-5"
+                                        aria-autocomplete="list"
+                                      />
+                                    </div>
+                                    <div
+                                      class="inner show"
+                                      role="listbox"
+                                      id="bs-select-5"
+                                      tabindex="-1"
+                                    >
+                                      <ul
+                                        class="dropdown-menu inner show"
+                                        role="presentation"
+                                      ></ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <input type="hidden" name="currency_name" />
+                              <input
+                                type="hidden"
+                                class="form-control risk_rate"
+                                id="risk_rate"
+                                name="risk_rate"
+                                placeholder="Risk-Free Rate"
+                                readonly="readonly"
+                              />
+                              <div class="form-notes">
+                                <p>
+                                  e.g. the currency you invoice in. If you have
+                                  more than one, please pick your principal
+                                  billing currency. When you checkout, select
+                                  Subscription plan which allows you to input
+                                  multiple currencies.
+                                </p>
+                              </div>
+                              <div class="form-watch">
+                                <a
+                                  class="btn-watch"
+                                  href="https://youtu.be/yAoLSRbwxL8"
+                                  data-lity="data-lity"
+                                >
+                                  <div class="icon-watch">
+                                    <img
+                                      src="https://waccfinder.com/wacc/images/ic-watch-video.svg"
+                                      alt="icon"
+                                    />
+                                  </div>
+                                  <span>Watch The Video</span></a
+                                >
+                              </div>
+                              <div class="form-action">
+                                <button
+                                  class="btn btn__primary"
+                                  type="submit"
+                                  onclick="button_process(this, 'currency', 'text-beta')"
+                                >
+                                  OK</button
+                                ><span class="btn-note"
+                                  ><small>Press &nbsp;</small><b>Enter</b></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="modal modalECurrency"
+                            id="modalEcurrency"
+                            tabindex="-1"
+                            aria-modal="true"
+                            style="padding-right: 0px; display: none"
+                          >
+                            <div
+                              class="modal-dialog modal-dialog-centered modal-sm"
+                            >
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <h4>
+                                    Please confirm if you wish to proceed.
+                                  </h4>
+                                  <p>
+                                    Hi, I’m VALLARIS Bot. I note that you have
+                                    selected a non-local currency, a currency
+                                    that is not denominated in your country of
+                                    operation. Find out more.
+                                  </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <div class="btn-wrap text-right">
+                                    <a
+                                      class="btn btn-link"
+                                      href="#"
+                                      data-dismiss="modal"
+                                      >No</a
+                                    ><a class="btn btn__primary" href="#"
+                                      >Yes</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="calc5"
+                        role="tabpanel"
+                        aria-labelledby="contact-tab"
+                      >
+                        <div class="row justify-content-center">
+                          <div class="col-lg-5 col-md-6">
+                            <div class="stepper"><span>5</span></div>
+                            <div
+                              class="calculator__question"
+                              data-err="Please select industry to continue"
+                            >
+                              <div class="form-group">
+                                <label for="industri"
+                                  >Select your industry</label
+                                >
+                                <div
+                                  class="dropdown bootstrap-select select select-chain"
+                                  style="width: 100%"
+                                >
+                                  <select
+                                    class="select select-chain"
+                                    name="industri"
+                                    title="Select industry"
+                                    data-live-search="true"
+                                    data-target="beta"
+                                    data-text="text-beta"
+                                    data-link="cost_equity"
+                                    tabindex="-98"
+                                  >
+                                    <option
+                                      class="bs-title-option"
+                                      value=""
+                                    ></option>
+                                    <option value="1.2">Advertising</option>
+                                    <option value="1.2">
+                                      Aerospace/Defense
+                                    </option>
+                                    <option value="1.5">Air Transport</option>
+                                    <option value="0.9">Apparel</option>
+                                    <option value="1.3">
+                                      Auto &amp; Truck
+                                    </option>
+                                    <option value="1.5">Auto Parts</option>
+                                    <option value="1">
+                                      Bank (Money Center)
+                                    </option>
+                                    <option value="0.7">
+                                      Banks (Regional)
+                                    </option>
+                                    <option value="0.9">
+                                      Beverage (Alcoholic)
+                                    </option>
+                                    <option value="0.8">Beverage (Soft)</option>
+                                    <option value="1">Broadcasting</option>
+                                    <option value="0.9">
+                                      Brokerage &amp; Investment Banking
+                                    </option>
+                                    <option value="1.1">
+                                      Building Materials
+                                    </option>
+                                    <option value="1.1">
+                                      Business &amp; Consumer Services
+                                    </option>
+                                    <option value="0.9">Cable TV</option>
+                                    <option value="1.1">
+                                      Chemical (Basic)
+                                    </option>
+                                    <option value="1.4">
+                                      Chemical (Diversified)
+                                    </option>
+                                    <option value="1.1">
+                                      Chemical (Specialty)
+                                    </option>
+                                    <option value="1.1">
+                                      Coal &amp; Related Energy
+                                    </option>
+                                    <option value="1.1">
+                                      Computer Services
+                                    </option>
+                                    <option value="1.3">
+                                      Computers/Peripherals
+                                    </option>
+                                    <option value="1.1">
+                                      Construction Supplies
+                                    </option>
+                                    <option value="1">Diversified</option>
+                                    <option value="1.1">
+                                      Drugs (Biotechnology)
+                                    </option>
+                                    <option value="1">
+                                      Drugs (Pharmaceutical)
+                                    </option>
+                                    <option value="1">Education</option>
+                                    <option value="1.1">
+                                      Electrical Equipment
+                                    </option>
+                                    <option value="1.2">
+                                      Electronics (Consumer &amp; Office)
+                                    </option>
+                                    <option value="1.3">
+                                      Electronics (General)
+                                    </option>
+                                    <option value="1.1">
+                                      Engineering/Construction
+                                    </option>
+                                    <option value="1.1">Entertainment</option>
+                                    <option value="1">
+                                      Environmental &amp; Waste Services
+                                    </option>
+                                    <option value="0.9">
+                                      Farming/Agriculture
+                                    </option>
+                                    <option value="0.8">
+                                      Financial Svcs. (Non-bank &amp; Insurance)
+                                    </option>
+                                    <option value="0.8">Food Processing</option>
+                                    <option value="0.8">
+                                      Food Wholesalers
+                                    </option>
+                                    <option value="1.1">
+                                      Furn/Home Furnishings
+                                    </option>
+                                    <option value="1">
+                                      Green &amp; Renewable Energy
+                                    </option>
+                                    <option value="1">
+                                      Healthcare Products
+                                    </option>
+                                    <option value="0.9">
+                                      Healthcare Support Services
+                                    </option>
+                                    <option value="1">
+                                      Heathcare Information and Technology
+                                    </option>
+                                    <option value="1.4">Homebuilding</option>
+                                    <option value="0.9">
+                                      Hospitals/Healthcare Facilities
+                                    </option>
+                                    <option value="1.1">Hotel/Gaming</option>
+                                    <option value="1">
+                                      Household Products
+                                    </option>
+                                    <option value="1.2">
+                                      Information Services
+                                    </option>
+                                    <option value="0.7">
+                                      Insurance (General)
+                                    </option>
+                                    <option value="1">Insurance (Life)</option>
+                                    <option value="0.8">
+                                      Insurance (Prop/Cas.)
+                                    </option>
+                                    <option value="0.8">
+                                      Investments &amp; Asset Management
+                                    </option>
+                                    <option value="1.1">Machinery</option>
+                                    <option value="1.1">
+                                      Metals &amp; Mining
+                                    </option>
+                                    <option value="1.1">
+                                      Office Equipment &amp; Services
+                                    </option>
+                                    <option value="1.2">
+                                      Oil/Gas (Integrated)
+                                    </option>
+                                    <option value="1.4">
+                                      Oil/Gas (Production and Exploration)
+                                    </option>
+                                    <option value="1.1">
+                                      Oil/Gas Distribution
+                                    </option>
+                                    <option value="1.3">
+                                      Oilfield Svcs/Equip.
+                                    </option>
+                                    <option value="0.9">
+                                      Packaging &amp; Container
+                                    </option>
+                                    <option value="1.1">
+                                      Paper/Forest Products
+                                    </option>
+                                    <option value="0.8">Power</option>
+                                    <option value="1">Precious Metals</option>
+                                    <option value="0.9">
+                                      Publishing &amp; Newspapers
+                                    </option>
+                                    <option value="1">R.E.I.T.</option>
+                                    <option value="1">
+                                      Real Estate (Development)
+                                    </option>
+                                    <option value="1">
+                                      Real Estate (General/Diversified)
+                                    </option>
+                                    <option value="0.9">
+                                      Real Estate (Operations &amp; Services)
+                                    </option>
+                                    <option value="1.1">Recreation</option>
+                                    <option value="1.4">Reinsurance</option>
+                                    <option value="1.1">
+                                      Restaurant/Dining
+                                    </option>
+                                    <option value="1.1">
+                                      Retail (Automotive)
+                                    </option>
+                                    <option value="1.2">
+                                      Retail (Building Supply)
+                                    </option>
+                                    <option value="0.8">
+                                      Retail (Distributors)
+                                    </option>
+                                    <option value="1">Retail (General)</option>
+                                    <option value="0.6">
+                                      Retail (Grocery and Food)
+                                    </option>
+                                    <option value="1.4">Retail (Online)</option>
+                                    <option value="1.2">
+                                      Retail (Special Lines)
+                                    </option>
+                                    <option value="1.2">
+                                      Rubber&amp; Tires
+                                    </option>
+                                    <option value="1.5">Semiconductor</option>
+                                    <option value="1.9">
+                                      Semiconductor Equip
+                                    </option>
+                                    <option value="1.1">
+                                      Shipbuilding &amp; Marine
+                                    </option>
+                                    <option value="1.1">Shoe</option>
+                                    <option value="1.2">
+                                      Software (Entertainment)
+                                    </option>
+                                    <option value="1.1">
+                                      Software (Internet)
+                                    </option>
+                                    <option value="1.2">
+                                      Software (System &amp; Application)
+                                    </option>
+                                    <option value="1.2">Steel</option>
+                                    <option value="1">
+                                      Telecom (Wireless)
+                                    </option>
+                                    <option value="1.1">
+                                      Telecom. Equipment
+                                    </option>
+                                    <option value="0.8">
+                                      Telecom. Services
+                                    </option>
+                                    <option value="0.8">Tobacco</option>
+                                    <option value="1">Transportation</option>
+                                    <option value="0.8">
+                                      Transportation (Railroads)
+                                    </option>
+                                    <option value="1.1">Trucking</option>
+                                    <option value="0.8">
+                                      Utility (General)
+                                    </option>
+                                    <option value="0.7">
+                                      Utility (Water)
+                                    </option></select
+                                  ><button
+                                    type="button"
+                                    class="btn dropdown-toggle select-control bs-placeholder"
+                                    data-toggle="dropdown"
+                                    role="combobox"
+                                    aria-owns="bs-select-6"
+                                    aria-haspopup="listbox"
+                                    aria-expanded="false"
+                                    title="Select industry"
+                                  >
+                                    <div class="filter-option">
+                                      <div class="filter-option-inner">
+                                        <div class="filter-option-inner-inner">
+                                          Select industry
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </button>
+                                  <div class="dropdown-menu">
+                                    <div class="bs-searchbox">
+                                      <input
+                                        type="search"
+                                        class="form-control"
+                                        autocomplete="off"
+                                        placeholder="Search here.."
+                                        role="combobox"
+                                        aria-label="Search"
+                                        aria-controls="bs-select-6"
+                                        aria-autocomplete="list"
+                                      />
+                                    </div>
+                                    <div
+                                      class="inner show"
+                                      role="listbox"
+                                      id="bs-select-6"
+                                      tabindex="-1"
+                                    >
+                                      <ul
+                                        class="dropdown-menu inner show"
+                                        role="presentation"
+                                      ></ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <input type="hidden" name="industri_name" />
+                              <input type="hidden" name="tax_percent" />
+                              <input
+                                type="hidden"
+                                class="form-control"
+                                id="beta"
+                                name="beta"
+                                placeholder="Beta"
+                                readonly="readonly"
+                              />
+                              <div class="form-notes">
+                                <p>
+                                  Select the industry the business is in. If you
+                                  are in more than one, please pick your
+                                  principal industry, i.e. the industry that
+                                  contributes most of your revenues or assets.
+                                </p>
+                              </div>
+                              <div class="form-watch">
+                                <a
+                                  class="btn-watch"
+                                  href="https://youtu.be/yAoLSRbwxL8"
+                                  data-lity="data-lity"
+                                >
+                                  <div class="icon-watch">
+                                    <img
+                                      src="https://waccfinder.com/wacc/images/ic-watch-video.svg"
+                                      alt="icon"
+                                    />
+                                  </div>
+                                  <span>Watch The Video</span></a
+                                >
+                              </div>
+                              <div class="form-action">
+                                <button
+                                  class="btn btn__primary"
+                                  type="submit"
+                                  onclick="button_process(this, 'industri', 'text-pre_tax')"
+                                >
+                                  OK</button
+                                ><span class="btn-note"
+                                  ><small>Press &nbsp;</small><b>Enter</b></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="calc6"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab"
+                      >
+                        <div class="row justify-content-center">
+                          <div class="col-lg-5 col-md-6">
+                            <div class="stepper"><span>6</span></div>
+                            <div
+                              class="calculator__question"
+                              data-err="Please select  pre-tax cost of debt to continue"
+                            >
+                              <div class="form-group percentage">
+                                <label for="pre_tax"
+                                  >What is your pre-tax cost of debt?</label
+                                >
+                                <input
+                                  required=""
+                                  name="pre_tax"
+                                  class="form-control"
+                                  type="number"
+                                  step="any"
+                                  value=""
+                                  data-text="text-pre_tax"
+                                  data-after="%"
+                                />
+                              </div>
+                              <div class="form-notes">
+                                <p>
+                                  You can find it under your balance sheet
+                                  footnotes to long-term third-party debt, e.g.
+                                  bank loan with a minimum of 5 year tenure.
+                                </p>
+                              </div>
+                              <div class="form-watch">
+                                <a
+                                  class="btn-watch"
+                                  href="https://youtu.be/yAoLSRbwxL8"
+                                  data-lity="data-lity"
+                                >
+                                  <div class="icon-watch">
+                                    <img
+                                      src="https://waccfinder.com/wacc/images/ic-watch-video.svg"
+                                      alt="icon"
+                                    />
+                                  </div>
+                                  <span>Watch The Video</span></a
+                                >
+                              </div>
+                              <div class="form-action">
+                                <button
+                                  class="btn btn__primary"
+                                  type="submit"
+                                  onclick="button_process(this, 'pre_tax', 'text-tax')"
+                                >
+                                  OK</button
+                                ><span class="btn-note"
+                                  ><small>Press &nbsp;</small><b>Enter</b></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="calc7"
+                        role="tabpanel"
+                        aria-labelledby="contact-tab"
+                      >
+                        <div class="row justify-content-center">
+                          <div class="col-lg-5 col-md-6">
+                            <div class="stepper"><span>7</span></div>
+                            <div
+                              class="calculator__question"
+                              data-err="Please select corporate tax rate to continue"
+                            >
+                              <div class="form-group percentage">
+                                <label for="tax"
+                                  >What is your corporate tax rate?</label
+                                >
+                                <input
+                                  class="form-control last-inpt"
+                                  name="tax"
+                                  type="number"
+                                  step="any"
+                                  data-text="text-tax"
+                                  data-after="%"
+                                  data-link="debt"
+                                />
+                              </div>
+                              <p class="text-danger"></p>
+                              <div class="form-notes">
+                                <p>
+                                  Select your marginal tax rate. Do not use
+                                  effective tax rate unless it represents a
+                                  sustainable, long term rate.
+                                </p>
+                              </div>
+                              <div class="form-watch">
+                                <a
+                                  class="btn-watch"
+                                  href="https://youtu.be/yAoLSRbwxL8"
+                                  data-lity="data-lity"
+                                >
+                                  <div class="icon-watch">
+                                    <img
+                                      src="https://waccfinder.com/wacc/images/ic-watch-video.svg"
+                                      alt="icon"
+                                    />
+                                  </div>
+                                  <span>Watch The Video</span></a
+                                >
+                              </div>
+                              <div class="form-action">
+                                <button
+                                  class="btn btn__primary"
+                                  type="submit"
+                                  onclick="button_process(this, 'tax', 'text-percent_debt')"
+                                >
+                                  OK</button
+                                ><span class="btn-note"
+                                  ><small>Press &nbsp;</small><b>Enter</b></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="calc8"
+                        role="tabpanel"
+                        aria-labelledby="contact-tab"
+                      >
+                        <div class="row justify-content-center">
+                          <div class="col-lg-5 col-md-6">
+                            <div class="stepper"><span>8</span></div>
+                            <div
+                              class="calculator__question"
+                              data-err="Please your target’s debt as a percentage to continue"
+                            >
+                              <div class="form-group percentage">
+                                <label for="percent_debt"
+                                  >What is your target’s debt as a percentage of
+                                  debt + equity?</label
+                                >
+                                <input
+                                  class="form-control"
+                                  name="percent_debt"
+                                  type="number"
+                                  step="any"
+                                  data-text="text-debt_percent"
+                                  data-after="%"
+                                />
+                              </div>
+                              <input
+                                type="hidden"
+                                class="form-control"
+                                id="debt"
+                                name="debt"
+                                placeholder="Cost of Debt"
+                                readonly="readonly"
+                                data-target="text-debt"
+                              />
+                              <input
+                                type="hidden"
+                                class="form-control"
+                                id="cost_equity"
+                                name="cost_equity"
+                                placeholder="Cost of Equity"
+                                readonly="readonly"
+                                data-target="text-cost_equity"
+                              />
+                              <input
+                                type="hidden"
+                                class="form-control"
+                                id="percent_equity"
+                                name="percent_equity"
+                                placeholder="% Equity"
+                                readonly="readonly"
+                              />
+                              <input
+                                type="hidden"
+                                class="form-control"
+                                id="wacc"
+                                name="wacc"
+                                readonly="readonly"
+                              />
+                              <div class="form-notes">
+                                <p>
+                                  Long term debt / (long term debt + equity).
+                                  Equity = market capitalization + minority
+                                  interest + preference shares (if listed under
+                                  the equity section of the balance sheet of
+                                  your business' financial statements.
+                                </p>
+                              </div>
+                              <div class="form-watch">
+                                <a
+                                  class="btn-watch"
+                                  href="https://youtu.be/yAoLSRbwxL8"
+                                  data-lity="data-lity"
+                                >
+                                  <div class="icon-watch">
+                                    <img
+                                      src="https://waccfinder.com/wacc/images/ic-watch-video.svg"
+                                      alt="icon"
+                                    />
+                                  </div>
+                                  <span>Watch The Video</span></a
+                                >
+                              </div>
+                              <div class="form-action">
+                                <button
+                                  class="btn btn__primary"
+                                  type="submit"
+                                  onclick="button_process(this, 'percent_debt', '')"
+                                >
+                                  OK</button
+                                ><span class="btn-note"
+                                  ><small>Press &nbsp;</small><b>Enter</b></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="calc9"
+                        role="tabpanel"
+                        aria-labelledby="contact-tab"
+                      >
+                        <div class="row justify-content-center text-center">
+                          <div class="col-lg-6 col-md-8">
+                            <div class="section__heading">
+                              <h1>Congratulations!</h1>
+                            </div>
+                            <div class="section__subtitle wacc-total-results">
+                              <p>
+                                Your WACCFinder<sup>TM</sup> result is
+                                <span class="result">5.0</span>%
+                              </p>
+                            </div>
+                            <div class="section__action">
+                              <div class="row justify-content-between">
+                                <div class="col">
+                                  <a
+                                    class="btn-link"
+                                    href="https://waccfinder.com/get-started"
+                                    >Reset Data</a
+                                  >
+                                </div>
+                                <div class="col">
+                                  <button
+                                    class="btn btn__primary"
+                                    type="submit"
+                                  >
+                                    Save Result
+                                  </button>
+                                  <!-- <a class="btn btn__primary" href="https://waccfinder.com/select-plan">Save Result</a> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <section class="calculator__nav">
+                  <div class="container">
+                    <div class="row justify-content-end">
+                      <div class="navs">
+                        <div class="proegressbar-box">
+                          <div class="total-steps">
+                            <span><u>1</u> of 8 questions</span>
+                          </div>
+                          <div class="progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 12.5%"
+                              aria-valuenow="10"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="navs__buttons">
+                          <a class="prevtab navs__up disabled"
+                            ><img
+                              src="https://waccfinder.com/wacc/images/ic-chevrons-down.svg"
+                              alt="icon" /></a
+                          ><a
+                            class="nexttab navs__down disabled"
+                            data-toggle="tooltip"
+                            title="Please select duration of cash flow to continue"
+                            data-original-title="Please select duration of cash flow to continue"
+                            ><img
+                              src="https://waccfinder.com/wacc/images/ic-chevrons-down.svg"
+                              alt="icon"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </section>
+            </div>
             <div class="col-lg-5">
               <h3 class="text-center">Your WACC Calculation</h3>
               <p class="text-center">
