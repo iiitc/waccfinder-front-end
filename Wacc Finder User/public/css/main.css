@@ -453,6 +453,9 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
 #login form.form-signin .form-group .form-select {
   border-color: #9da2ab;
 }
+#login form.form-signin .form-group #phone-num {
+  padding-left: 90px;
+}
 #login form.form-signin .form-group.inpt-pass .sh {
   position: absolute;
   top: 2.125rem;
@@ -548,6 +551,79 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
 #login form.form-signin .form-group.inpt-phoneno .dropdown-menu .inner {
   max-height: 165px;
   overflow-y: auto;
+}
+#login form.form-signin .form-group .select-dropdown {
+  position: absolute;
+  display: inline-block;
+  max-width: 100%;
+  bottom: 0;
+  left: 0;
+}
+#login form.form-signin .form-group .select-dropdown__button {
+  padding: 0.5rem 1rem;
+  background-color: #f9f9f9;
+  color: #000;
+  border: 1px solid #9da2ab;
+  border-right: 0;
+  border-radius: 0.5rem 0 0 0.5rem;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  text-align: left;
+}
+#login form.form-signin .form-group .select-dropdown__button:focus {
+  outline: none;
+}
+#login form.form-signin .form-group .select-dropdown__button::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#login form.form-signin .form-group .select-dropdown__button .zmdi-chevron-down {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+#login form.form-signin .form-group .select-dropdown__list {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  max-height: 300px;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  opacity: 0;
+  pointer-events: none;
+  transform-origin: top left;
+  transform: scale(1, 0);
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+}
+#login form.form-signin .form-group .select-dropdown__list.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1, 1);
+}
+#login form.form-signin .form-group .select-dropdown__list-item {
+  display: block;
+  list-style-type: none;
+  padding: 10px 15px;
+  background: #fff;
+  border-top: 1px solid #e6e6e6;
+  font-size: 14px;
+  line-height: 1.4;
+  cursor: pointer;
+  color: #000;
+  transition: all ease-in-out 0.3s;
 }
 #login form.form-signin .custom-control {
   position: relative;
@@ -740,6 +816,9 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
 #account.account-edit .form-group .form-select {
   border-color: #9da2ab;
 }
+#account.account-edit .form-group #phone-num {
+  padding-left: 90px;
+}
 #account.account-edit .form-group.inpt-phoneno .select {
   position: absolute;
   left: 0;
@@ -819,6 +898,79 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
 #account.account-edit .form-group.inpt-phoneno .dropdown-menu .inner {
   max-height: 165px;
   overflow-y: auto;
+}
+#account.account-edit .form-group .select-dropdown {
+  position: absolute;
+  display: inline-block;
+  max-width: 100%;
+  bottom: 0;
+  left: 0;
+}
+#account.account-edit .form-group .select-dropdown__button {
+  padding: 0.5rem 1rem;
+  background-color: #f9f9f9;
+  color: #000;
+  border: 1px solid #9da2ab;
+  border-right: 0;
+  border-radius: 0.5rem 0 0 0.5rem;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  text-align: left;
+}
+#account.account-edit .form-group .select-dropdown__button:focus {
+  outline: none;
+}
+#account.account-edit .form-group .select-dropdown__button::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#account.account-edit .form-group .select-dropdown__button .zmdi-chevron-down {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+#account.account-edit .form-group .select-dropdown__list {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  max-height: 300px;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  opacity: 0;
+  pointer-events: none;
+  transform-origin: top left;
+  transform: scale(1, 0);
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+}
+#account.account-edit .form-group .select-dropdown__list.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1, 1);
+}
+#account.account-edit .form-group .select-dropdown__list-item {
+  display: block;
+  list-style-type: none;
+  padding: 10px 15px;
+  background: #fff;
+  border-top: 1px solid #e6e6e6;
+  font-size: 14px;
+  line-height: 1.4;
+  cursor: pointer;
+  color: #000;
+  transition: all ease-in-out 0.3s;
 }
 
 /**

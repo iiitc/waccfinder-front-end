@@ -52,8 +52,24 @@
         </div>
         <div class="form-group">
           <label for="phone">Phone no.</label>
-          <input type="tel" id="phone" class="form-control" name="phone" />
+          <input type="tel" id="phone-num" class="form-control" name="phone" />
           <div class="error-message" id="phone-error"></div>
+          <div class="select-dropdown">
+            <button
+              href="#"
+              role="button"
+              data-value=""
+              class="select-dropdown__button"
+            >
+              <span>+1</span> <i class="zmdi zmdi-chevron-down"></i>
+            </button>
+            <ul class="select-dropdown__list">
+              <li data-value="+1" class="select-dropdown__list-item">+1</li>
+              <li data-value="+91" class="select-dropdown__list-item">+91</li>
+              <li data-value="+431" class="select-dropdown__list-item">+431</li>
+              <li data-value="+23" class="select-dropdown__list-item">+23</li>
+            </ul>
+          </div>
         </div>
         <div class="form-group inpt-pass">
           <label>Password</label>

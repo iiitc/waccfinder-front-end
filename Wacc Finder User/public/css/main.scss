@@ -513,6 +513,9 @@ form {
       .form-select {
         border-color: $input-border;
       }
+      #phone-num {
+        padding-left: 90px;
+      }
       &.inpt-pass {
         .sh {
           position: absolute;
@@ -615,6 +618,85 @@ form {
             max-height: 165px;
             overflow-y: auto;
           }
+        }
+      }
+      .select-dropdown {
+        position: absolute;
+        display: inline-block;
+        max-width: 100%;
+        bottom: 0;
+        left: 0;
+
+        &__button {
+          padding: 0.5rem 1rem;
+          background-color: $card-bg-grey;
+          color: $text-color;
+          border: 1px solid $input-border;
+          border-right: 0;
+          border-radius: 0.5rem 0 0 0.5rem;
+          cursor: pointer;
+          width: 80px;
+          height: 40px;
+          text-align: left;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          .zmdi-chevron-down {
+            position: absolute;
+            right: 10px;
+            top: 12px;
+          }
+        }
+
+        &__list {
+          position: absolute;
+          display: block;
+          left: 0;
+          right: 0;
+          max-height: 300px;
+          overflow: auto;
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          opacity: 0;
+          pointer-events: none;
+          transform-origin: top left;
+          transform: scale(1, 0);
+          transition: all ease-in-out 0.3s;
+          z-index: 2;
+
+          &.active {
+            opacity: 1;
+            pointer-events: auto;
+            transform: scale(1, 1);
+          }
+        }
+        &__list-item {
+          display: block;
+          list-style-type: none;
+          padding: 10px 15px;
+          background: #fff;
+          border-top: 1px solid #e6e6e6;
+          font-size: 14px;
+          line-height: 1.4;
+          cursor: pointer;
+          color: $text-color;
+          transition: all ease-in-out 0.3s;
         }
       }
     }
@@ -817,6 +899,9 @@ form {
       .form-select {
         border-color: $input-border;
       }
+      #phone-num {
+        padding-left: 90px;
+      }
       &.inpt-phoneno {
         .select {
           position: absolute;
@@ -899,6 +984,85 @@ form {
             max-height: 165px;
             overflow-y: auto;
           }
+        }
+      }
+      .select-dropdown {
+        position: absolute;
+        display: inline-block;
+        max-width: 100%;
+        bottom: 0;
+        left: 0;
+
+        &__button {
+          padding: 0.5rem 1rem;
+          background-color: $card-bg-grey;
+          color: $text-color;
+          border: 1px solid $input-border;
+          border-right: 0;
+          border-radius: 0.5rem 0 0 0.5rem;
+          cursor: pointer;
+          width: 80px;
+          height: 40px;
+          text-align: left;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          .zmdi-chevron-down {
+            position: absolute;
+            right: 10px;
+            top: 12px;
+          }
+        }
+
+        &__list {
+          position: absolute;
+          display: block;
+          left: 0;
+          right: 0;
+          max-height: 300px;
+          overflow: auto;
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          opacity: 0;
+          pointer-events: none;
+          transform-origin: top left;
+          transform: scale(1, 0);
+          transition: all ease-in-out 0.3s;
+          z-index: 2;
+
+          &.active {
+            opacity: 1;
+            pointer-events: auto;
+            transform: scale(1, 1);
+          }
+        }
+        &__list-item {
+          display: block;
+          list-style-type: none;
+          padding: 10px 15px;
+          background: #fff;
+          border-top: 1px solid #e6e6e6;
+          font-size: 14px;
+          line-height: 1.4;
+          cursor: pointer;
+          color: $text-color;
+          transition: all ease-in-out 0.3s;
         }
       }
     }
