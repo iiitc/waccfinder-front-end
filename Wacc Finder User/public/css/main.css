@@ -132,14 +132,14 @@ h2 {
   letter-spacing: -0.05rem;
   line-height: 1.4em;
   font-size: 3rem;
-  color: rgb(29, 46, 59);
+  color: #121820;
 }
 
 h3 {
   letter-spacing: -0.05rem;
   line-height: 1.4em;
   font-size: 2.5rem;
-  color: rgb(29, 46, 59);
+  color: #121820;
 }
 
 p,
@@ -351,6 +351,8 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
 }
 .main #sidebar .nav-pills .nav-link {
   padding: 0.8rem 1rem;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 .main #sidebar .nav-pills .nav-link:hover,
 .main #sidebar .nav-pills .nav-link.active,
@@ -374,6 +376,10 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
   max-width: 400px;
   padding: 7rem 1rem;
 }
+#login .form-signin h1, #login .form-signin p {
+  text-align: center;
+  color: #f2f2f2;
+}
 #login .form-signin .login-logo img {
   max-height: 2rem;
   display: block;
@@ -381,7 +387,8 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
 }
 #login .form-signin form {
   padding: 2rem;
-  background: #f9f9f9;
+  background: #121820;
+  color: #f2f2f2;
   border-radius: 6px;
   border: 1px solid rgba(41, 41, 41, 0.15);
   box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -418,6 +425,9 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
   text-decoration: none;
   color: #b5914f;
   font-weight: 500;
+}
+#login .form-signin .newmem p {
+  color: #121820;
 }
 #login form.form-signin .form-group {
   margin-bottom: 1.5rem;
@@ -726,7 +736,7 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
 #account .profile-info .profile-detail .profile-name .full-name {
   font-weight: 500;
   margin-bottom: 0;
-  font-size: 2.25rem;
+  font-size: 2rem;
   line-height: 1.333em;
 }
 #account .profile-info .profile-detail .profile-name .acc-stat {
