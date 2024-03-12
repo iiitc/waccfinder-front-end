@@ -332,7 +332,7 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
   z-index: 2;
 }
 #main_header .navbar .navbar-brand img {
-  max-width: 200px;
+  max-width: 250px;
 }
 #main_header .navbar .navbar-nav .nav-item .nav-link span {
   color: #fff;
@@ -1543,9 +1543,6 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
   border: 1px solid #9da2ab;
   border-radius: 50px;
 }
-#activation .activation .auth__stepper .step.current {
-  color: #fff;
-}
 #activation .activation .auth__stepper .step.current .number {
   background: #b5914f;
   border-color: #b5914f;
@@ -1736,7 +1733,7 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
   color: #fff;
 }
 #login-footer .footer__logo img {
-  max-width: 200px;
+  max-width: 250px;
   display: block;
 }
 #login-footer .footer__note p {
