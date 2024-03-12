@@ -456,7 +456,7 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
   color: #121820;
   background-color: #ffffff;
   background-clip: padding-box;
-  border: 2px solid #001b4b;
+  border: 1px solid #001b4b;
   border-radius: 0.5rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -814,12 +814,12 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
   color: #000;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #9da2ab;
+  border: 1px solid #001b4b;
   border-radius: 0.5rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 #account.account-edit .form-group .form-select {
-  border-color: #9da2ab;
+  border-color: #001b4b;
 }
 #account.account-edit .form-group #phone-num {
   padding-left: 90px;
@@ -1108,7 +1108,7 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
   color: #000;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #9da2ab;
+  border: 1px solid #001b4b;
   border-radius: 0.5rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -1167,7 +1167,7 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
   color: #000;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #9da2ab;
+  border: 1px solid #001b4b;
   border-radius: 0.5rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }

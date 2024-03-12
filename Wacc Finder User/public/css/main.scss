@@ -522,7 +522,7 @@ form {
         color: $blue-black;
         background-color: #ffffff;
         background-clip: padding-box;
-        border: 2px solid $grey_249;
+        border: 1px solid $grey_249;
         border-radius: 0.5rem;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
       }
@@ -902,12 +902,12 @@ form {
         color: #000;
         background-color: #fff;
         background-clip: padding-box;
-        border: 1px solid $input-border;
+        border: 1px solid $grey_249;
         border-radius: 0.5rem;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
       }
       .form-select {
-        border-color: $input-border;
+        border-color: $grey_249;
       }
       #phone-num {
         padding-left: 90px;
@@ -1211,7 +1211,7 @@ form {
         color: $text-color;
         background-color: #fff;
         background-clip: padding-box;
-        border: 1px solid $input-border;
+        border: 1px solid $grey_249;
         border-radius: 0.5rem;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
       }
@@ -1277,7 +1277,7 @@ form {
         color: $text-color;
         background-color: #fff;
         background-clip: padding-box;
-        border: 1px solid $input-border;
+        border: 1px solid $grey_249;
         border-radius: 0.5rem;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
       }
