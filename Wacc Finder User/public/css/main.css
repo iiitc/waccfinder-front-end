@@ -456,12 +456,12 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
   color: #121820;
   background-color: #ffffff;
   background-clip: padding-box;
-  border: 1px solid #9da2ab;
+  border: 2px solid #001b4b;
   border-radius: 0.5rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 #login form.form-signin .form-group .form-select {
-  border-color: #9da2ab;
+  border-color: #001b4b;
 }
 #login form.form-signin .form-group #phone-num {
   padding-left: 90px;
@@ -1536,10 +1536,10 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
 }
 #activation .activation .auth__stepper .step .number {
   display: block;
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
   margin: 0 auto 0.5rem;
-  padding: 0.25rem 0.6875rem;
+  padding: 1.25rem 0.6875rem;
   border: 1px solid #9da2ab;
   border-radius: 50px;
 }
@@ -1554,8 +1554,8 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
   height: 1px;
   background: #000;
   position: absolute;
-  top: 0.9375rem;
-  left: calc(100% - 1.5625rem);
+  top: 1.9375rem;
+  left: calc(100% - 1.22rem);
 }
 #activation .activation .auth__stepper .col-lg-4:last-child .step::after {
   content: unset;
@@ -1591,15 +1591,15 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
 }
 #activation .activation.activation-step-2 .auth__verifcode .form-group .row {
   margin: 0 auto;
-  max-width: 14rem;
+  max-width: 22rem;
 }
 #activation .activation.activation-step-2 .auth__verifcode .form-group .row .col {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 #activation .activation.activation-step-2 .auth__verifcode .form-group .row .col .form-control {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   margin-right: 0;
   border-radius: 50px;
   padding: 0.5rem;

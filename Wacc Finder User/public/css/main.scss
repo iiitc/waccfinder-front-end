@@ -522,12 +522,12 @@ form {
         color: $blue-black;
         background-color: #ffffff;
         background-clip: padding-box;
-        border: 1px solid $input-border;
+        border: 2px solid $grey_249;
         border-radius: 0.5rem;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
       }
       .form-select {
-        border-color: $input-border;
+        border-color: $grey_249;
       }
       #phone-num {
         padding-left: 90px;
@@ -1679,10 +1679,10 @@ form {
         position: relative;
         .number {
           display: block;
-          width: 2rem;
-          height: 2rem;
+          width: 4rem;
+          height: 4rem;
           margin: 0 auto 0.5rem;
-          padding: 0.25rem 0.6875rem;
+          padding: 1.25rem 0.6875rem;
           border: 1px solid $input-border;
           border-radius: 50px;
         }
@@ -1696,12 +1696,12 @@ form {
         }
         &:after {
           content: "";
-          width: calc(100% - 2.625rem);
-          height: 1px;
-          background: #000;
-          position: absolute;
-          top: 0.9375rem;
-          left: calc(100% - 1.5625rem);
+    width: calc(100% - 2.625rem);
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 1.9375rem;
+    left: calc(100% - 1.22rem);
         }
       }
       .col-lg-4 {
@@ -1746,13 +1746,13 @@ form {
           }
           .row {
             margin: 0 auto;
-            max-width: 14rem;
+            max-width: 22rem;
             .col {
               padding-left: 0.5rem;
               padding-right: 0.5rem;
               .form-control {
-                width: 2.5rem;
-                height: 2.5rem;
+                width: 4.5rem;
+                height: 4.5rem;
                 margin-right: 0;
                 border-radius: 50px;
                 padding: 0.5rem;
