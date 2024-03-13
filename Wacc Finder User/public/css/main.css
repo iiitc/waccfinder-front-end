@@ -1005,7 +1005,8 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
   font-size: 0.875rem;
   line-height: 1.429em;
   display: block;
-  color: #3d3d3d;
+  color: #000;
+  font-weight: 600;
 }
 #wacc .wacc__card .wacc__card-top {
   margin-bottom: 1rem;
@@ -1601,9 +1602,9 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
   width: 4.5rem;
   height: 4.5rem;
   margin-right: 0;
-  border-radius: 50px;
   padding: 0.5rem;
   text-align: center;
+  border: 1px solid #001b4b;
 }
 #activation .activation.activation-step-2 .auth__verifcode .auth__verifcode .resend {
   color: #8a8a8a;
