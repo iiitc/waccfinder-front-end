@@ -1783,7 +1783,8 @@ form {
   .nav-pills {
     .nav-link {
       text-align: left;
-      color: $brown-gold;
+      color: $blue-black;
+      font-weight: 600;
       &.active {
         background-color: $brown-gold;
         color: #fff;

@@ -1621,7 +1621,8 @@ form .form-group .iti .iti__flag-container .iti__selected-flag {
 }
 #helpcenter .nav-pills .nav-link {
   text-align: left;
-  color: #b5914f;
+  color: #121820;
+  font-weight: 600;
 }
 #helpcenter .nav-pills .nav-link.active {
   background-color: #b5914f;
