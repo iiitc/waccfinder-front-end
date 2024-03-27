@@ -142,7 +142,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-7">
-              <section class="calculator__action freeUser">
+              <section class="calculator__action premiumUser">
                 <div class="container">
                   <!-- Tab navigation-->
 
@@ -237,6 +237,16 @@
                         >Steps 9</a
                       >
                     </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="calc10-tab"
+                        data-bs-toggle="tab"
+                        href="#calc10"
+                        role="tab"
+                        >Steps 10</a
+                      >
+                    </li>
                   </ul>
                   <!-- Tab content-->
                   <form class="forms" id="frm_calc">
@@ -258,12 +268,8 @@
                                   id="duration"
                                   name="duration"
                                   class="form-select"
-                                  title="Select duration of cash flow"
                                 >
-                                  <option
-                                    class="bs-title-option"
-                                    value=""
-                                  ></option>
+                                  <option value="">Select a duration</option>
                                   <option value="5">1-5 years</option>
                                   <option value="10">5 years and above</option>
                                 </select>
@@ -300,10 +306,9 @@
                                     <select
                                       class="form-select"
                                       id="month"
-                                      title="Select month"
                                       name="month"
                                     >
-                                      <option value=""></option>
+                                      <option value="">Select month</option>
                                       <option value="January">January</option>
                                       <option value="February">February</option>
                                       <option value="March">March</option>
@@ -323,10 +328,9 @@
                                     <select
                                       class="form-select"
                                       id="year"
-                                      title="Select year"
                                       name="year"
                                     >
-                                      <option value=""></option>
+                                      <option value="">Select year</option>
                                       <option value="2022">2022</option>
                                       <option value="2021">2021</option>
                                       <option value="2020">2020</option>
@@ -429,7 +433,7 @@
                                   class="form-select"
                                   title="Select currency"
                                 >
-                                  <option value=""></option>
+                                  <option value="">Select a Currency</option>
                                   <option value="2.7%">AUD</option>
                                 </select>
                               </div>
@@ -520,12 +524,8 @@
                                   class="form-select"
                                   id="industri"
                                   name="industri"
-                                  title="Select industry"
                                 >
-                                  <option
-                                    class="bs-title-option"
-                                    value=""
-                                  ></option>
+                                  <option value="">Select industry</option>
                                   <option value="1.2">Advertising</option>
                                   <option value="1.2">Aerospace/Defense</option>
                                 </select>
@@ -570,6 +570,79 @@
                         <div class="row">
                           <div class="col-lg-8">
                             <div class="stepper"><span>6</span></div>
+                            <div class="calculator__question">
+                              <div class="form-group percentage">
+                                <label for="small"
+                                  >What is the target company's market
+                                  capitalization (listed company)?</label
+                                >
+                                <select
+                                  name="small"
+                                  id="small"
+                                  class="form-select"
+                                >
+                                  <option value="">
+                                    Select small cap premium
+                                  </option>
+                                  <option value="0%">
+                                    Above USD 2,445.7mil
+                                  </option>
+                                  <option value="0.7%">
+                                    USD 2,445.7mil to USD 13,177.8mil
+                                  </option>
+                                  <option value="1.4%">
+                                    USD 452mil to USD 2,444.7mil
+                                  </option>
+                                  <option value="3.2%">
+                                    USD 2.2mil to USD 451.8mil
+                                  </option>
+                                </select>
+                                <input
+                                  type="hidden"
+                                  name="countryRiskPremium"
+                                  id="countryRiskPremium"
+                                  value="0%"
+                                />
+                              </div>
+                              <div class="form-notes">
+                                <p>
+                                  If the target company is unlisted, reference
+                                  its balance sheet net book value as at
+                                  valuation date (from Step 1).
+                                </p>
+                              </div>
+                              <div class="form-watch">
+                                <a
+                                  class="btn-watch mklbItem"
+                                  data-youtube-id="yAoLSRbwxL8"
+                                >
+                                  <div class="icon-watch">
+                                    <img
+                                      src="https://waccfinder.com/wacc/images/ic-watch-video.svg"
+                                      alt="icon"
+                                    />
+                                  </div>
+                                  <span>Watch The Video</span></a
+                                >
+                              </div>
+                              <div class="form-action">
+                                <button
+                                  class="btn btn-brown-gold"
+                                  type="submit"
+                                >
+                                  OK</button
+                                ><span class="btn-note"
+                                  ><small>Press &nbsp;</small><b>Enter</b></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="calc7" role="tabpanel">
+                        <div class="row">
+                          <div class="col-lg-8">
+                            <div class="stepper"><span>7</span></div>
                             <div class="calculator__question">
                               <div class="form-group percentage">
                                 <label for="pre_tax"
@@ -617,10 +690,10 @@
                           </div>
                         </div>
                       </div>
-                      <div class="tab-pane fade" id="calc7" role="tabpanel">
+                      <div class="tab-pane fade" id="calc8" role="tabpanel">
                         <div class="row">
                           <div class="col-lg-8">
-                            <div class="stepper"><span>7</span></div>
+                            <div class="stepper"><span>8</span></div>
                             <div class="calculator__question">
                               <div class="form-group percentage">
                                 <label for="tax"
@@ -669,10 +742,10 @@
                           </div>
                         </div>
                       </div>
-                      <div class="tab-pane fade" id="calc8" role="tabpanel">
+                      <div class="tab-pane fade" id="calc9" role="tabpanel">
                         <div class="row">
                           <div class="col-lg-8">
-                            <div class="stepper"><span>8</span></div>
+                            <div class="stepper"><span>9</span></div>
                             <div class="calculator__question">
                               <div class="form-group percentage">
                                 <label for="percent_debt"
@@ -723,7 +796,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="tab-pane fade" id="calc9" role="tabpanel">
+                      <div class="tab-pane fade" id="calc10" role="tabpanel">
                         <div class="row justify-content-center text-center">
                           <div class="col-lg-9">
                             <div class="section__heading">
@@ -783,7 +856,7 @@
                                 <div class="col">
                                   <a
                                     class="btn transparent-btn"
-                                    href="get-started.html"
+                                    href="get-started-premium.html"
                                     >Reset Data</a
                                   >
                                 </div>
@@ -809,7 +882,7 @@
                       <div class="navs">
                         <div class="proegressbar-box">
                           <div class="total-steps">
-                            <span><u>1</u> of 8 questions</span>
+                            <span><u>1</u> of 9 questions</span>
                           </div>
                           <div class="progress">
                             <div

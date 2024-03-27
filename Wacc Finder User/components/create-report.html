@@ -9,10 +9,8 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.3/build/css/intlTelInput.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -209,109 +207,241 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-8 account-edit" id="account">
-            <h4 class="mb-5">Edit Account Information</h4>
-            <div class="profile-info">
-              <div class="profile-pic">
-                <div id="pp"></div>
-                <div class="btn-upload">
-                  <label class="btn transparent-btn text-center" for="pp_upload"
-                    >Upload</label
+          <div class="col-lg-8" id="create-report">
+            <div class="profile-box-form">
+              <form id="create-report-form" enctype="multipart/form-data">
+                <div class="form-group">
+                  <label>Duration of cash flow</label>
+                  <select
+                    name="duration"
+                    class="form-select"
+                    title="Select duration of cash flow"
                   >
+                    <option value="">Select duration of cash flow</option>
+                    <option selected="">1-5 years</option>
+                    <option>5 years and above</option>
+                  </select>
                 </div>
-              </div>
-              <div class="profile-detail">
-                <form action="#" id="profile-form">
-                  <input type="hidden" name="avatar" value="" />
-                  <div class="form-group hidden">
-                    <input type="file" name="file" id="pp_upload" />
-                  </div>
-                  <div class="form-group">
-                    <h2 class="full-name" hidden>Rohan George</h2>
-                    <label for="name">Name</label>
-                    <input
-                      class="form-control"
-                      id="name"
-                      name="name"
-                      type="text"
-                      value="Rohan George"
-                    />
-                    <div class="error-message" id="name-error"></div>
-                  </div>
-                  <div class="form-group">
-                    <label for="occupation">Occupation</label>
-                    <select
-                      class="select form-select"
-                      id="occupation"
-                      name="occupation"
-                    >
-                      <option value="Auditor" selected="selected">
-                        Auditor
-                      </option>
-                      <option value="Business Valuer">Business Valuer</option>
-                      <option value="Professional Accountant in Business">
-                        Professional Accountant in Business
-                      </option>
-                    </select>
-                    <div class="error-message" id="occupation-error"></div>
-                  </div>
-                  <div class="form-group">
-                    <label for="phone">Phone no.</label>
-                    <input
-                      type="tel"
-                      id="phone-num"
-                      class="form-control"
-                      name="phone"
-                    />
-                    <div class="error-message" id="phone-error"></div>
-                    <div class="select-dropdown">
-                      <input
-                        type="text"
-                        id="selected-code"
-                        class="select-dropdown__input"
-                        value="+1"
-                        readonly
-                      />
-                      <ul class="select-dropdown__list">
-                        <li data-value="+1" class="select-dropdown__list-item">
-                          +1
-                        </li>
-                        <li data-value="+91" class="select-dropdown__list-item">
-                          +91
-                        </li>
-                        <li
-                          data-value="+431"
-                          class="select-dropdown__list-item"
-                        >
-                          +431
-                        </li>
-                        <li data-value="+23" class="select-dropdown__list-item">
-                          +23
-                        </li>
-                      </ul>
+                <div class="form-group">
+                  <label>Valuation date</label>
+                  <div class="row">
+                    <div class="col">
+                      <select
+                        name="month"
+                        class="form-select"
+                        title="Select month"
+                      >
+                        <option value="">Select month</option>
+                        <option value="01" selected="">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <select
+                        name="year"
+                        class="form-select"
+                        title="Select year"
+                      >
+                        <option value="">Select year</option>
+                        <option selected="">2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                      </select>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label for="email">Email address</label>
+                </div>
+                <div class="form-group">
+                  <label>Country of operation</label>
+                  <select
+                    name="country"
+                    class="form-select"
+                    title="Select country"
+                  >
+                    <option value="">Select country</option>
+                    <option value="Albania" data-id="1" selected="">
+                      Albania
+                    </option>
+                    <option value="Andorra (Principality of)" data-id="2">
+                      Andorra (Principality of)
+                    </option>
+                    <option value="Angola" data-id="3">Angola</option>
+                    <option value="Argentina" data-id="4">Argentina</option>
+                    <option value="Armenia" data-id="5">Armenia</option>
+                    <option value="Aruba" data-id="6">Aruba</option>
+                    <option value="Australia" data-id="7">Australia</option>
+                    <option value="Austria" data-id="8">Austria</option>
+                    <option value="Azerbaijan" data-id="9">Azerbaijan</option>
+                    <option value="Bahamas" data-id="10">Bahamas</option>
+                    <option value="Bahrain" data-id="11">Bahrain</option>
+                    <option value="Bangladesh" data-id="12">Bangladesh</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Transactional currency</label>
+                  <select
+                    name="currency"
+                    class="form-select"
+                    title="Select currency"
+                  >
+                    <option value="">Select currency</option>
+                    <option value="ALL" selected="">ALL</option>
+                    <option value="EUR">EUR</option>
+                    <option value="AON">AON</option>
+                    <option value="ARS">ARS</option>
+                    <option value="AMD">AMD</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Industry</label>
+                  <select
+                    name="industry"
+                    class="form-select"
+                    title="Select industry"
+                  >
+                    <option value="">Select industry</option>
+                    <option value="Advertising">Advertising</option>
+                    <option value="Aerospace/Defense" selected="">
+                      Aerospace/Defense
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Small cap premium</label>
+                  <select
+                    name="small_cap"
+                    class="form-select"
+                    title="Organization type"
+                  >
+                    <option value="">Organization type</option>
+                    <option value="Above USD 2,445.7mil" selected="">
+                      Above USD 2,445.7mil
+                    </option>
+                    <option value="USD 2,445.7mil to USD 13,177.8mil">
+                      USD 2,445.7mil to USD 13,177.8mil
+                    </option>
+                    <option value="USD 452mil to USD 2,444.7mil">
+                      USD 452mil to USD 2,444.7mil
+                    </option>
+                    <option value="USD 2.2mil to USD 451.8mil">
+                      USD 2.2mil to USD 451.8mil
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group percentage">
+                  <label>Pre-tax cost of debt</label>
+                  <input
+                    name="pre_tax"
+                    class="form-control"
+                    type="text"
+                    value="1"
+                  />
+                </div>
+                <div class="form-group percentage">
+                  <label>Corporate tax rate</label>
+                  <input
+                    name="tax"
+                    class="form-control"
+                    type="text"
+                    value="15"
+                  />
+                </div>
+                <div class="form-group percentage">
+                  <label>Market Capitalization And Debt To Equity Ratio</label>
+                  <input
+                    name="percent_debt"
+                    class="form-control"
+                    type="text"
+                    value="1"
+                  />
+                </div>
+                <h5>Supporting Documents</h5>
+                <div class="form-group">
+                  <label
+                    >Historical Revenue Summary By Country (Optional)</label
+                  >
+                  <div class="uploadfile">
                     <input
-                      class="form-control"
-                      id="email"
-                      type="email"
-                      name="email"
-                      value="facelesspaamb@gmail.com"
+                      name="historical"
+                      class="inputfile"
+                      id="upload_revenue"
+                      type="file"
+                      title="Historical Revenue Summary"
                     />
-                    <div class="error-message" id="email-error"></div>
-                  </div>
-                  <div class="form-action d-flex justify-content-end row-gap-2">
-                    <a class="btn transparent-btn" href="account.html"
-                      >Cancel</a
+                    <label
+                      class="btn btn-brown-gold btn-upload"
+                      for="upload_revenue"
+                      >Upload Document</label
                     >
-                    <button class="btn btn-brown-gold" type="submit">
-                      Save changes
-                    </button>
+                    <div class="box-preview">
+                      <div class="preview"></div>
+                      <div class="text"><span class="filename"></span></div>
+                      <button class="btn-delete" type="button">Hapus</button>
+                    </div>
                   </div>
-                </form>
-              </div>
+                </div>
+                <div class="form-group">
+                  <label>Loan Agreement (Optional)</label>
+                  <div class="uploadfile">
+                    <input
+                      name="loan"
+                      class="inputfile"
+                      id="upload_loan"
+                      type="file"
+                      title="Loan Agreement"
+                    />
+                    <label
+                      class="btn btn-brown-gold btn-upload"
+                      for="upload_loan"
+                      >Upload Document</label
+                    >
+                    <div class="box-preview">
+                      <div class="preview"></div>
+                      <div class="text"><span class="filename"></span></div>
+                      <button class="btn-delete" type="button">Hapus</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Balance Sheet (Compulsory)</label>
+                  <div class="uploadfile">
+                    <input
+                      name="balance"
+                      class="inputfile"
+                      id="upload_balance"
+                      type="file"
+                      title="Balance Sheet"
+                    />
+                    <label
+                      class="btn btn-brown-gold btn-upload"
+                      for="upload_balance"
+                      >Upload Document</label
+                    >
+                    <div class="box-preview">
+                      <div class="preview"></div>
+                      <div class="text"><span class="filename"></span></div>
+                      <button class="btn-delete" type="button">Hapus</button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="form-action d-flex column-gap-3 justify-content-end"
+                >
+                  <a class="btn transparent-btn" href="#">Cancel</a>
+                  <button class="btn btn-brown-gold" type="submit">
+                    Submit
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -357,8 +487,8 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.3/build/js/intlTelInput.js"></script>
     <script src="../assets/js/mklb.js"></script>
     <script src="../public/js/main.js"></script>
   </body>
