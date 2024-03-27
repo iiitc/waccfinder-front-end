@@ -36,12 +36,7 @@
           <div class="col-12">
             <nav class="navbar navbar-expand-md">
               <div class="container-fluid">
-                <a
-                  class="navbar-brand"
-                  href="/components/get-started.html"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modalLimit"
-                >
+                <a class="navbar-brand" href="/components/get-started.html">
                   <img src="../public/images/logo.png" alt="WACC Finder" />
                 </a>
                 <button
@@ -152,8 +147,8 @@
     <main class="main">
       <section class="container">
         <div class="row section">
-          <div class="col-lg-6">
-            <h1>Account Information</h1>
+          <div class="col-md-6">
+            <h1>WACCFinder<sup>TM</sup></h1>
             <p>
               Manage your profile, WACCFinderTM results, security,
               notifications, membership plans and billing details.
@@ -165,15 +160,12 @@
             <div class="d-flex flex-column flex-shrink-0 p-0" id="sidebar">
               <ul class="nav nav-pills flex-column mb-auto row-gap-2">
                 <li class="nav-item">
-                  <a href="account.html" class="nav-link active"
+                  <a href="account.html" class="nav-link link-body-emphasis"
                     >Account Information</a
                   >
                 </li>
                 <li>
-                  <a
-                    href="wacc-result.html"
-                    class="nav-link link-body-emphasis"
-                  >
+                  <a href="wacc-result.html" class="nav-link active">
                     WACCFinder<sup>TM</sup>
                   </a>
                 </li>
@@ -212,114 +204,24 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-8" id="account">
-            <div class="profile-info">
-              <div class="profile-pic">
-                <div id="pp"></div>
-              </div>
-              <div class="profile-detail">
-                <div class="profile-name">
-                  <h2 class="full-name">Rohan George</h2>
-                  <div class="company">
-                    <p>Company Name</p>
-                  </div>
-                  <div class="acc-stat">Free Account</div>
-                </div>
-                <div class="profile-contact">
-                  <ul>
-                    <li>
-                      <div class="ic ic-user"></div>
-                      <span>Auditor</span>
-                    </li>
-                    <li>
-                      <div class="ic ic-phone"></div>
-                      <a href="tel: +1123456789">+1123456789</a>
-                    </li>
-                    <li>
-                      <div class="ic ic-mail"></div>
-                      <a href="mailto:facelesspaamb@gmail.com"
-                        >facelesspaamb@gmail.com</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <a class="button-edit" href="account-edit.html"
-                  ><img
-                    src="../public/images/Account-Images/ic-edit.svg"
-                    alt="icon"
-                /></a>
-              </div>
-            </div>
-            <hr />
-            <div class="profile-deact">
-              <p>Account Deactivation</p>
-              <p>What happens when you deactivate your account?</p>
-              <ul>
-                <li>
-                  Your account and saved WACCFinder<sup>TM</sup> will be
-                  removed.
-                </li>
-                <li>You won’t be able to re-activate your account.</li>
-              </ul>
-              <a
-                href="#"
-                class="btn btn-deactivate"
-                data-bs-toggle="modal"
-                data-bs-target="#modalDeactivation"
-                >Account Deactivation</a
-              >
-            </div>
-
-            <div class="modal" id="modalDeactivation">
-              <div class="modal-dialog modal-dialog-centered modal-md">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <b>Deactivation Account</b>
-                    <div
-                      class="btn-close"
-                      href="#"
-                      data-bs-dismiss="modal"
-                    ></div>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-group mb-4">
-                        <label>I'm leaving because</label>
-                        <select
-                          name="reason"
-                          class="form-select mt-1"
-                          title="Select reason"
-                          required=""
-                        >
-                          <option value="">Select a reason</option>
-                          <option value="Not user-friendly">
-                            Not user-friendly
-                          </option>
-                          <option value="Too expensive">Too expensive</option>
-                          <option value="Lack of features">
-                            Lack of features
-                          </option>
-                          <option value="Technical issues">
-                            Technical issues
-                          </option>
-                        </select>
-                      </div>
-                      <div
-                        class="form-action d-flex justify-content-end column-gap-3"
-                      >
-                        <a
-                          class="btn transparent-btn"
-                          href="#"
-                          data-bs-dismiss="modal"
-                          >Cancel</a
-                        >
-                        <button class="btn btn-deactivate" type="submit">
-                          Deactivate account
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
+          <div class="col-lg-8" id="thank-you">
+            <div class="row">
+              <div class="box-thanks">
+                <h4>Thank You For Your Purchase</h4>
+                <p>
+                  We have received and send a receipt for your order to add a
+                  signed PDF report from a Chartered Valuer and Appraiser. Our
+                  team will process your request promptly and provide you with
+                  updates as necessary.
+                </p>
+                <p>
+                  If you have any questions or concerns, please do not hesitate
+                  to reach out to us at any time. Our team is always ready to
+                  assist you and ensure that your experience with us is as
+                  seamless as possible.
+                </p>
+                <p>Thank you again for choosing our services.</p>
+                <p>We look forward to working with you.</p>
               </div>
             </div>
           </div>
@@ -364,28 +266,6 @@
         </div>
       </div>
     </footer>
-
-    <div class="modal" id="modalLimit">
-      <div class="modal-dialog modal-dialog-centered modal-md">
-        <div class="modal-content">
-          <div class="modal-header">
-            <b>Quota limit reached</b>
-            <div class="btn-close" href="#" data-bs-dismiss="modal"></div>
-          </div>
-          <div class="modal-body text-center">
-            <p>
-              You have reached your Business Account Quota.
-              <a href="/select-plan" class="transparent-btn">Learn more</a>
-            </p>
-          </div>
-          <div class="modal-footer">
-            <div class="form-action">
-              <a class="btn btn-brown-gold" href="#">Upgrade to Enterprise</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
